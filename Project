@@ -1,0 +1,20 @@
+Project
+
+- Right click -> create -> 'Make Folder', 'Scripts', 'Scenes', 'Materials', 'Prefab'
+- Right click -> show in explorer -> opens up file system location of folder
+- Search form 
+- Filter button
+- Label button (ex audio, architecture, etc)
+- Star button -> save search aka Fav
+- Access to Asset Store when selected on fav search
+- One Column vs Two Column View
+- Zoom scale at the bottom
+
+- Prefabs: are linked copies
+- Update Prefabs by dragging and dropping GameObject on to Prefab
+- Right click in Project -> create an empty prefab will be gray -> is empty
+- Right click in hierarchy -> dragged into project will be blue -> has a transform
+
+- F -> Focus
+- Shift F = Edit -> Lock View to Selected -> Camera follows
+

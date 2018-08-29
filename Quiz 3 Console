@@ -1,0 +1,27 @@
+Quiz 3 Console
+
+1. How do you reveal more information about a log message?
+
+- Left-click on the message
+
+2. If the logs are overflowing with repeated messages, which button condenses them?
+
+- C -> Collapse
+
+3. Where would you click to hide the selected log message?
+
+- B 
+
+4. What does this icon mean?
+
+- Warning message
+
+5. What does this icon mean?
+
+- Information message
+
+6. Which line number is the selected message being printed from?
+
+- 12
+
+(LogMessages:Start() (at Assets/ScriptName.cs:12))

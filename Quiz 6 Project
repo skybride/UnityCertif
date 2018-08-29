@@ -1,0 +1,56 @@
+Quiz 6 Project
+
+1. Where would ;you click to add a saved search?
+
+- E
+
+2. What can you do by clicking this icon?
+
+- Filter based on asset type
+
+3. Where do you click to view the assets in a list, as shown, rather than the default grid?
+
+- D
+
+4. How can you create a new folder?
+
+- Right-click "Assets" folder > "Create" > "Folder"
+
+5. How do you quickly rename a saved search?
+
+- Slow click twice
+
+5. Where would you click to label the selected file?
+
+- B
+
+6. Select the best matching:
+
+1 = A Searching by Type : Doesn't require any effort to categorise assets
+2 = C Searching by Label : Allows you to group files even between folders
+3 = D Saved Searches : Keep track of your frequently used filters
+4 = B Searching by text : Find a file if you remember part of the name 
+
+7. How do you hide the Project window sidebar?
+
+- Click in the same way as closing a tab > Select 'One Column Layout'
+
+8. Select the empty Prefab
+
+- C
+
+9. What does a Prefab do?
+
+- Stores a GameObject hierarchy complete with components and properties
+
+10. How do you focus the Scene View Camera on a GameObject from the Hierarchy View?
+
+- Double-click
+
+11. Where can you left-click to create an empty Prefab?
+
+- C
+
+12. How can you create a Prefab from an object in the Hierarchy?
+
+- Click and drag the GameObject into the Project View

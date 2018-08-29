@@ -1,0 +1,26 @@
+Toolbar
+
+5 main Components
+
+Play|Pause|Step Through
+
+Play: CTRL + P : Game View
+Pause: CTRL + SHIFT + P : Scene View
+Step Through: Helps with Debugging
+
+
+Layers: Groups Objects. If Layer of GameObject was selected in Inspector...you will have access to Layers in Toolbar section
+
+Layouts: Duplicate of Windows -> Layouts
+
+Transform Tools: Hand tool, Move tool, Rotation tool, Scale tool and 2D transform -> which changes UI
+
+Pivot: Transform Gizmo Toggles -> rotates or scales depending on the position of the pivot point.
+
+Global|Local: Global = global axes/ Local = inherits Parent's rotation/transform
+
+Account: signing in
+
+Service: online/offline
+
+

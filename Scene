@@ -1,0 +1,34 @@
+Scene
+
+HandTool: 
+Panel of 5 icons (on top left in Unity)
+- Move: click and drag
+- Orbit: alt + click and drag
+- Zoom: alt + righ click and drag
+(ctrl + click)
+- Hold shift quickly zoom (Does not work with scroll wheel)
+
+
+FlyThrough Mode:
+
+perspective: view is first person shooter
+
+Isometric: No perspective. Everything looks the same size
+
+Orthographic: Looking down 1 plane (no camera orbiting) 
+
+Scene View Gizmo can be clicked to change from iso to perspective
+Align Camera buttons XYZ
+
+2D vs 3D button
+
+Wireframe, Shaded also very important scene views
+
+light button toggle
+
+audio button toggle
+
+skybox, fog, flares and animated materials toggle
+
+search form
+

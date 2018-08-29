@@ -1,0 +1,9 @@
+Inspector
+
+- Active In the Hierarchy -> Check box name that enables/disables GameObject
+- Namefield
+- Static check box -> Flag to Game Engine for possible Optimization
+- Tag -> tag on GameObject to make it easier for Code to find
+- Layer -> Restricting interaction between objects. Filtering an operation over sets of objects. (ex. Invisible object perhaps like a bush -> will have an ignore Ray cast layer)
+
+

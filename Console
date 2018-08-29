@@ -1,0 +1,26 @@
+Console
+
+Debug.Log("...");
+Debug.LogWarning("...");
+Debug.LogError("...");
+
+NOTE:
+
+1st is logging with a white exclamation with a message background
+2nd is logging with a yellow exclamation with a triangle
+3rd is logging with a red exclamation with an octagon background
+
+LF = Line Feed
+
+[Enabling AdvancedSavedOptions]
+
+Tools -> Customize -> Commands -> Menubar: change to File
+Add Command -> Add Advanced Saved Options 
+
+NOTE: Using AdvancedSavedOptions -> we can turn on Windows CR LF
+to turn on LF.
+
+[Tabs vs Spaces]
+
+Tools -> Options -> TextEditor -> All Languages -> Tabs : select keep tabs or insert spaces
+C# -> Tabs: select keep tabs or insert spaces

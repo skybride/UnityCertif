@@ -1,0 +1,23 @@
+Quiz 5 Inspector
+
+1. Choose the best matching:
+
+A = 1
+B = 4
+C = 3
+D = 2
+
+2. How do you return a Component to its default values?
+
+- Click the cog icon on the Component > "Reset"
+
+3. Choose the best match:
+
+1 = B
+2 = A
+3 = C
+4 = D
+
+4. What happens if you click this check box?
+
+- Disables the Box Collider Component

@@ -1,0 +1,51 @@
+Hierarchy
+
+NOTES:
+
+Purpose of the Hierarchy 
+
+- List of GameObjects in the Scene
+- Transforms of children GameObjects are inherited from their parents
+- Ex Car(parent GameObject) -> Wheels(children GameObject)
+
+Edit -> Preferences ->Enable Alpha Numeric Sorting.
+- Hierarchy will gain a new button that allows to sort transform or alphabetical order
+
+---
+
+
+1. Select the second child of the selected GameObject
+
+- A -> Audio Source
+
+2. How do you add a cube object to the Hierarchy?
+
+- Click "Create" > "3D Object" > "Cube"
+
+3. What happens when you click the indicated symbol?
+
+- "child" is hidden under "Child Parent".
+
+4. How do you create an empty GameObject in the root of the Hierarchy?
+
+- Right-click in the Hierarchy >"Create Empty"
+
+5. Assuming these objects haven't been renamed, what is the selected item?
+
+- Empty GameObject
+
+6. What is the main purpose of the Hierarchy?
+
+- Organising and listing the GameObjects in a Scene
+
+7. Which order is the Hierarchy being sorted in?
+
+- 'Alphabetical Sort'
+
+8. How do you enable the 'Alphabetical Sort' option for the Hierarchy?
+
+- Edit -> Preferences -> General -> 'Enable Alpha Numeric Sorting'
+
+9. What does the Transform Sort allow you to do that Alphabetical Sort doesn't?
+
+- Re-Order GameObjects
