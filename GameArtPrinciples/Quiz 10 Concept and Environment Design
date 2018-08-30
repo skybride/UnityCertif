@@ -1,0 +1,24 @@
+Quiz 10 Concept and Environment Design
+
+1. How can you ensure a consistent mood in a team with many artists?
+
+- Have an art director approve all the concept art
+
+2. Why might we limit the number of colours we use in a game?
+
+- To introduce less visual noise for the player
+
+3. Match the moods with the best techniques you can use in a game to achieve them
+
+1 = A : Cartoony = Flat Shaded Materials 
+2 = C : Grungy = Low saturation colours
+3 = D : Gloomy = Dark fog
+4 = B : Dreamy = Light bloom effects
+
+4. When choosing a colour palette, if we are going to vary the brightness of the colour, we should ...
+
+- Keep hue and saturation constant
+
+5. Where would we use complementary colours?
+
+- To pick out elements that need to stand out

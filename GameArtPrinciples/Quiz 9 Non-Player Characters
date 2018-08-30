@@ -1,0 +1,48 @@
+Quiz 9 Non-Player Characters
+
+1. Why are bones placed in a hierarchy?
+
+- So that a moving joint will affect all the child bones within it's hierarchy
+
+2. Why do we use bones in animation?
+
+- To allow us to deform meshes around a skeleton
+
+3. Where do you click to edit the pose of a character?
+
+- 'Animator' Component > Avatar Object > The revealed file > 'Configure Avatar'
+
+4. How do you import the Characters Unity Package?
+
+- 'Assets' menu > 'Import Package' > 'Characters'
+
+5. Where do you click to add a second material?
+
+- B
+
+6. In which situation would you add multiple materials to a single mesh?
+
+- To give different parts of the mesh a different material
+
+7. What does it mean for a game to be CPU bound?
+
+- The CPU takes longer to process a frame than the GPU does.
+
+8. Why is the following setup inefficient?
+
+- Using multiple 'Skinned Mesh Renderer' components switches of some Unity optimisations
+
+9. Why is the following setup inefficient?
+
+- There are multiple materials
+
+10. Match the following techniques to their corresponding rule of thumb
+
+1 = A : Polygon Count = Mobile: 300-1500, Desktop: 1500-4000
+2 = D : Few Materials = No more than 2 per mesh
+3 = B : Few Bones = 15-30, Desktop: 15-60 
+4 = C : Mobile = No more than 1 per skeleton
+
+11. You notice that your Game is GPU bound, which of the following optimaisations should you consider first?
+
+- Reducing the polygon count

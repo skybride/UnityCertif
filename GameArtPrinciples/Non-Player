@@ -1,0 +1,57 @@
+Non-Player
+
+How to Import packages
+
+Meshes: Made up of polygons -> Triangles
+
+[Playing with Prefab]
+
+- Via Inspector -> under Animator Component -> Select: Avatar
+
+- Models folder will become available in the Project Section
+
+- Select 'Avatar' 
+
+- Via the Inspector -> Click on 'Configure Avatar' button
+
+- Character will showcase skeleton. 
+
+- Diagram will show pivot points
+
+Checkout ModelRig Unity file for reference
+
+[Comparing CPU and GPU bound games]
+
+*Performance Bottlenecks
+*optimizing model assets
+*tips for optimizing characters
+
+Factors that can affect performance of your game.
+
+[CPU Bound Game]
+
+CPU: Prepare frame #1|Prepare frame #2|Prepare frame #3
+GPU: ... |Render frame #1...waiting|Render frame #2...waiting
+
+1/ the time it takes for each frame = frame rate
+
+NOTE: In a CPU Bound game CPU is Completely utilized -> GPU is not
+To make this game run faster -> concentrate on optimizations that are less straining on CPU
+
+[GPU Bound Game]
+
+GPU: Render frame #1...waiting|Render frame #2...waiting
+CPU: ...|Prepare frame #1|Prepare frame #2|Prepare frame #3
+
+NOTE: GPU Renderers -> CPU assembles frame and then waits until GPU is done rendering next frame
+
+Balancing the pipeline
+(Reducing both GPU and CPU time)
+
+[Types of Optimization to balance Pipeline]
+Technique: Polygon Count : GPU : (Rule of Thumb) Mobile 300-1500, Desktop 1500-4000
+Technique: Few Materials : CPU : (Rule of Thumb) No more than 2 per mesh
+Technique: Few Bones :  CPU|GPU : (Rule of Thumb) Mobile: 15-30, Desktop: 15-60
+Seperate Forward and Inverse Kinematics: CPU : N/A
+Single 'skinned Mesh Renderer' : CPU : N/A
+

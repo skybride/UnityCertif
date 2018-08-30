@@ -1,0 +1,43 @@
+Concept and Environment Design
+
+*How art choices affect mood
+*Purpose of concept art
+*Unifying colour and why colour palettes matter
+*Complementary and analogue colours
+
+Why Do We Have Concept Art?
+
+- Creativity unconstrained by tools
+- Quickly create multiple variants
+- Allows artists to communicate ideas
+- Ensures mood across multiple artists
+
+NOTE: Try googling Concept Art in Google
+
+How Art Choices Affect Mood
+- Cartoon, photorealistic, dreamy...
+- Hi-poly vs low-poly
+- Flat vs complex materials
+- High vs low resolution textures
+- Foggy vs clear
+- ambient light colour
+
+Coulur Palette: Unifying Colour
+- Ensure Colours will look pleasant
+- Consistent with your desired mood
+- Less 'noise' by limiting colours
+
+Hue, Brightness and Saturation
+
+Hue: Color
+Brightness: Value (Darker / Lighter)
+Saturation: Chroma (Vibrant / not vibrant aka white)
+
+All these values affect the mood.
+
+Analogous colours : Colours that fit together and compliment one another
+ex: purple red orange -> gives warm feeling
+
+Complementary colours: Opposite colors that clash but work well together
+ex: green and red -> if game is mostly green use red to highlight important items to player
+
