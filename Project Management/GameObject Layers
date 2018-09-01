@@ -1,0 +1,20 @@
+Function of Layers
+
+- Control which objects are visible
+- Whether to block Raycast or not
+- If the layer is invisble to the camera
+
+Edit -> Project Settings -> Tags and Layers
+OR 
+Via the Inspector -> Layer: Add
+
+[Culling Mask]
+
+Add a GameObject (like a sphere)
+Add Layer -> and call it Invisible To Camera
+Main Camera -> Camera -> Culling Mask: Uncheck Invisible To Camera
+
+Sphere should disappear
+
+NOTE: This is good for debugging and for developers to display information to other developers without having it visible in the game.
+

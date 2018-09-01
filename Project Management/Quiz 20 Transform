@@ -1,0 +1,37 @@
+Quiz 20 Transform
+
+*Parented objects being moved will move childed object
+
+NOTE: moving the parent object will not adjust child's transform
+
+The relationship makes the transform relative to one another when moving
+
+*Components add extra functionallity to the game object.
+
+Ex: 
+- Cube Mesh Filter adds in a mesh than can be manipulated
+- Mesh Renderer -> renders into 3D space
+
+Use Transform -> Cog (settings button) to Copy Component / Paste Component of tranform values to a duplicate or different GameObject
+
+
+---
+
+1. Match the componenet to one of its functions
+
+1 = A : Transform = Allowing GameObject parent child relationships
+2 = D : Mesh Filter = Providing a mesh asset as a mesh to be rendered
+3 = B : Mesh Renderer = Renders a mesh into the scene
+4 = C : Camera = Captures and renders the scene from the current location
+
+2. Why does a child GameObject move when it's parent is moved?
+
+- Because its transform is positioned relative to the parent transform
+
+3. What does transform consist of?
+
+- Position, rotation and scale
+
+4. By default, an empty GameObject contains...
+
+- A Transform only

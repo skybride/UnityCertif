@@ -1,0 +1,131 @@
+Components
+
+Things to recognize in each Components
+
+[Mesh]
+- Mesh
+
+[Mesh Renderer]
+- Materials
+- Cast Shadows
+
+[Skinned Mesh Renderer]
+- Root Bones
+
+[Particle System]
+- Emission
+- Shape
+(there are lots)
+
+[Rigidbody]
+- Drag
+- Mass
+- Gravity
+
+[Box Collider]
+- Edit Collider
+
+[Sphere Collider]
+- Radius
+
+[Capsule Collider]
+- Radius 
+- Height
+
+
+[Rigidbody 2D]
+- Auto Mass
+
+[Box Collider]
+- x , y
+
+[Circle Collider]
+- x, y
+- radius
+
+[Audio Listener]
+- picking up audio from a location (hearing audio)
+
+[Audio Source]
+- Audio clip
+- output
+- mute
+- 3d sound setting
+
+[Audio Reverb Zone]
+- Reverb preset (cave, hanger etc)
+
+[Rendering Camera]
+- Culling Mask
+- Field of View
+- Projection
+- Target Texture
+- Depth
+- View port
+
+[Rendering Light]
+- Range
+- Intensity
+- Flare
+- Halo
+
+[Rendering Canvas Renderer]
+*ex UI Text, UI Button, UI Image
+- Child of canvas
+
+
+[Canvas GameObject]
+- Canvas
+- Canvas Scaler
+
+[User Defined Script]
+- Adding a Script Component
+(New Behaviour Script) 
+
+- Attaching this instead of using the Unity's built in script(s) to manipulate
+
+---
+
+Sam's List:
+
+Rendering
+
+    Mesh Filter
+    Mesh Renderer
+    Skinned Mesh Renderer
+
+Effects
+
+    Particle System
+
+Physics
+
+    Rigidbody
+    Box Collider
+    Sphere Collider
+    Capsule Collider
+
+Physics 2D
+
+    Rigidbody 2D
+    Box Collider 2D
+
+Audio
+
+    Audio Listener
+    Audio Source
+    Audio Reverb Zone
+
+Rendering
+
+    Camera
+    Light
+    Canvas Renderer
+
+UI
+
+    Text
+    Button
+    Image
+
+Custom Scripts
