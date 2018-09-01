@@ -1,0 +1,30 @@
+Models
+
+Importing custom meshes
+
+Drag and drop blender .fbx files into Assets in Project tab.
+
+Exported 3D files:
+- Pro: smaller, more modular design
+- Con: slower iterations with export/import
+- .FBX, .dae(collada), .3DS, .dexf, .obj
+
+Proprietary formats:
+- Pro: quick and simple initially
+- Con: bloated with unnecessary data
+(do not use for big projects)
+- Max, Maya, Blender, Cinema4D, Modo, Lightwave, Cheeta3D and Sketchup
+
+Contents of an FBX
+- Meshes
+- Animation
+- Blend Shapes
+- Texture/Materials
+- Smoothing group
+
+Blend Shape -> Google image search ex: facial expressions
+Smoothing Group -> Create smooth and hard edges
+
+
+NOTE: Checkout blendwap.com and sketchfab.com
+

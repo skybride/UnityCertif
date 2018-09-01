@@ -1,0 +1,24 @@
+Quiz 17 Sprites
+
+1. Select the correct Texture Type for a 2D character in a game.
+
+- Sprite
+
+2. Where do you click to set the pivot for the selected Sprite?
+
+- E
+
+3. Match the slice method to the best time to use it.
+
+1 = B : Manual selection = When there are no clear gaps
+2 = A : Automatic = When there are clear gaps
+3 = D : Grid By Cell Size = When the Sprites are regualr and of known pixel width
+4 = C : Grid By Cell Count = When the Sprites are regular and of known number
+
+4. Why is a border being used here?
+
+- To allow for proper button scaling
+
+5. How do you import a sprite sheet from an image
+
+- Click and drag into Assets pane

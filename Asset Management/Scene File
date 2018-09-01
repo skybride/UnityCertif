@@ -1,0 +1,17 @@
+Scene File
+
+Loading and Saving Scenes (levels)
+
+scenes end with a .unity file ending.
+
+Build Setting -> Scenes In Build -> Add Open Scenes
+
+Scene 0 loads first than 1 and etc.
+
+...
+In Project Tab right click -> open additive will add another scene tab into the Hierarchy
+
+In hierarchy:
+- Have the choice to load or unload scene that you want to develop on
+
+

@@ -1,0 +1,17 @@
+Quiz 16 Scene File
+
+1. What is a scene in Unity?
+
+- A snapshot of a hierarchy with GameObjects, Prefabs and their componenets and properties
+
+2. Where do you right-click to create a new scene?
+
+- F
+
+3. What is Unity's limit on the number of scenes that can be opened at one time?
+
+- As many as you have memory available
+
+4. Explain the purpose of the 'Scenes in Build'
+
+- Dictates which scenes should be included in the final game and which is the first to be displayed

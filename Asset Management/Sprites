@@ -1,0 +1,27 @@
+Sprites
+
+*2D assets 
+Sprites Sheets (spliced) with different instances of that sprite.
+
+Go to Google -> Images -> Usage rights: Adjust to labeled for reuse with modification
+- Save Image - Drag and drop into Unity
+- Via the Inspector adjust Texture Type: Sprite (2D and UI)
+- Sprite Mode: Multiple
+- Apply
+
+NOTE: Multiple sprite mode allows for splicing
+
+In Sprite Editor:
+- Cut out desired sprites
+- Pivot point of sprite can also be adjusted
+
+(In top right select slice)
+Type: 
+Automatic: Unity uses Alpha channel to figure out where sprites are
+Grid By Cell size: Counting Pixels
+Grid By Cell Count: Counting by columns and rows
+
+
+NOTE: Background has to be an alpha channel aka transparent (You can use Gimp to adjust this)
+
+Now Sprites can be used

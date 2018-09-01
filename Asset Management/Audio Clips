@@ -1,0 +1,39 @@
+Audio Clips
+
+Audio Formats:
+- Normal audio: .aif, .wav, .mp3 and .ogg
+- Tracker modules: .xm, .mod, .it, and .s3m
+
+Importing:
+- Click and drag music file into Assets section in Project Tab
+
+Compression Formats:
+
+Format: PCM | Compression: None | CPU Usage: Low | Rule of Thumbe: Short clips used often
+
+Format: ADPCM | Compression: x 3.5 | CPU Usage: Medium | Rule of Thumb: Noisy clips because of artifacts
+
+Format: Vorbis/MP3 | Compression: x10 | CPU Usage: High | Rule of Thumb: Medium length SFX and music
+
+---
+Click on an audio file and look in the Inspector
+You are able to choose build type -> Web or Standalone application?
+
+Under 'Default' there are Compression Settings
+
+- Decompress On Load: Decompress into memory -> uses a lot of memory but restricts the CPU usage (won't affect game play)
+
+- Compressed In Memory: Load in compressed file and when access is required it is then decompressed -> uses less memory. Uses CPU at time of access
+
+- Streaming: Uses least memory of all. Stores a buffer in memory and reads whole file from disk. Stores or uses high speed.
+
+NOTE: Vorbis -> you can change quality
+
+Look up 'Audio Clip' in Unity Docs
+
+Force To Mono: takes two channel audio and makes it into one channel audio
+Normalize: down mixing mono often leads to quite audio -> normalizing bring that back up
+Load In Background: Helps with optimization (so game is not super slow on load at beginning)
+Preload Audio Data: If checked off audio will be loaded only first time it is called to play. (CPU overhead and delay if doing this)
+
+NOTE: You can play an Audio Clip from and Audio Source (component)

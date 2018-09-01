@@ -1,0 +1,41 @@
+Default GameObjects
+
+Primitive GameObjects: 
+- Cube
+- Sphere
+- Capsule
+- Cylinder
+- Plane
+- Quad
+
+Plane vs Quad:
+
+Plane: lots of triangles, bigger mesh
+Quad: 2 triangles, smaller mesh
+
+---
+
+Scripts:
+
+Right Click -> Create -> C# script/JavaScript/ Editor Script
+
+Note: Editor script allows you to write automatice testing for your game
+(Good for test driven development -> Automation testing)
+
+---
+
+Shader:
+
+Program that runs on GPU not CPU
+-> giving materials an effect
+
+-Standard Surface Sahder
+-Unlit Shader
+-Image Effect Shader
+-Compute Shader
+
+---
+
+Terrain: unlinke with a plane -> you can sculpt on a terrain
+Tree: you can add branch on branches and leaves on branches
+WindZone: Adding this object will add directional wind

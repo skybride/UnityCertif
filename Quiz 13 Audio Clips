@@ -1,0 +1,15 @@
+Quiz 13 Audio Clips
+
+1.
+
+1 = B : Force To Mono = Mixes down to a single channel
+2 = C : Preload Audio Data = Start load the clip at level start
+3 = A : Normalize = Ensures consistent volume on single channel
+4 = D : Load In Background = Finish loading the level regardless of the clips load state
+
+2. Rank the memory usage of the following decompression options(highest to lowest)
+
+1 = B  Decompress On Load
+2 = D  Compressed In Memory with PCM
+3 = A  Compressed In Memory with Vorbis
+4 = C  Streaming

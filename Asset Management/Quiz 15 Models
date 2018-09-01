@@ -1,0 +1,17 @@
+Quiz 15 Models
+
+1. Which proprietary file formats are supported for model import in Unity?
+
+- Max, Maya, SketchUp, Blender, Cinema4D, Modo, Lightwave & Cheetah3D
+
+2. What is an advantage of using an export file format?
+
+- The file size will be smaller
+
+3. What is one advantage of using a proprietary format?
+
+- Faster interation in development
+
+4. What does an FBX file import?
+
+- Meshse, Blend Shapes and Smoothing groups

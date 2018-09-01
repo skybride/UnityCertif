@@ -1,0 +1,44 @@
+Quiz 14 Default GameObjects
+
+1. Which of the following are primitive objects that unity supports?
+
+- Cubes, Quads, Spheres
+
+2. What type of game object is this?
+
+- Camera
+
+3. Name the following object
+
+- Capsule
+
+4. Match the following images to their names
+
+1 = D Cube
+2 = C Plane
+3 = A Quad
+4 = B Cylinder
+
+5. Name the following gameobject
+
+- Sphere
+
+6. Name the following object:
+
+- Tree
+
+7. Name the game object whose inspector looks like this
+
+- Terrain
+
+8. What is the name of this component?
+
+-Directional Windzone
+
+9. What does C# scripting allow us to do in Unity?
+
+- Define more complex behaviours
+
+10. How do shader scripts differ from C# or JavaScripts?
+
+- Shaders run on the GPU whereas the others run on the CPU
