@@ -1,0 +1,25 @@
+Quiz 26 Slider
+
+1. Which options should you change to limit the value of the slider between 1 and 10?
+
+- E and F
+
+2. What do the Transition options apply to?
+
+- Just the handle
+
+3. Which GameObjects make up a slider?
+
+- A background image, fill image and handle image
+
+4. How does the slider change the size of the Fill GameObject?
+
+- By keeping a reference to its Rect Transform
+
+5. How would you change the colour of the slider fil?
+
+- Change the colour on the slider fill child object
+
+6. How can I change the default position of the slider to be centered?
+
+- Make the Value = 30

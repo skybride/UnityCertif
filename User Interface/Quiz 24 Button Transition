@@ -1,0 +1,37 @@
+Button > Function and Transition
+
+[Inspector]
+
+Button (script) -> Normal Color:
+
+- Color of button
+
+Button (script) -> Highlighted Color:
+
+- Color of button when hover
+
+Button (script) -> Pressed Color:
+
+- Trigger when button is clicked
+
+---
+
+1. Where do you find the text properties of a button?
+
+- In a seperate child GameObject
+    
+2. What do you need to do to a button sprite so that it can scale properly?
+
+- Position the borders inside the borders of the button
+    
+3. When using the "ColorTint" Transition option, how do colours change the image?
+
+- By multiplying
+
+4. If an image is too high resolution, how can you scale it down?
+
+- Increase the Pixels Per Unit of the image asset
+
+5. Where can you click to select an anchor position from a set of defaults?
+
+- D

@@ -1,0 +1,39 @@
+Quiz 22 Canvas Coordinates and Images
+
+[Hierarchy]
+
+Right Click -> UI -> Canvas
+
+NOTE: Canvas overlays over Main Camera
+
+Canvas -> Canvas Render Mode:
+
+Word Space : Canvas can be moved (Important for VR development)
+Screen Space - overlay
+Screen Space - camera 
+
+Canvas -> Image -> Source Image -> Preserve Aspect 
+OR
+Set Native and hold shift to resize
+
+---
+
+1. What is the purpose of a canvas?
+
+- Provide an area in which to place all UI elements
+
+2. How does "Screen Space - Camera" Render Mode differ from "World Space"?
+
+- The former places the UI a fixed distance in front of the camera.
+
+3. Which Render Mode requires you to link the Render Camera?
+
+- Screen Space - Camera
+
+4. Which Texture Type do we need to use for an image asset that will be used in the UI?
+
+- Sprite
+
+5. Where do you click to reset the height and width of the Rect Transform to that of the source image?
+
+- E : Set Native Size

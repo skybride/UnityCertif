@@ -1,0 +1,37 @@
+Button Interaction
+
+Adding Behaviour:
+
+- Color Tint
+- Animation
+- UI Swap
+
+[Inspector]
+
+Button -> On Click() -> None:
+
+- Replace none with a method created in from your script
+
+---
+
+1. Match the Transition options to their description
+
+1 = D : None = The button doesn't change
+2 = A : Color Tint = The same background imager is used but the color is tweaked
+3 = B : Sprite Swap = A different backgroun image is used for each mouse event
+4 = C : Animation = Mouse event trigger events in a n Animation controller
+
+2. What should this property point to?
+
+- The GameObject containing the behaviour you want to run
+
+3. What is being shown in this list?
+
+- Components of the linked object
+
+4. Ran the Transition options based on their flexiblity (least to most)
+
+1 = C : None
+2 = B : Color Tint
+3 = A : Sprite Swap
+4 = D : Animation

@@ -1,0 +1,35 @@
+Rect Tool : Anchor and Rect Transform
+
+[Rect Tool]
+
+Pivot: Can be set
+Center: Pivot cannot be moved
+
+Anchor: Providing relative offset
+
+---
+
+1. Name the following:
+
+- Anchor
+
+2. Name this componenet...
+
+- Rect Transform
+
+3. Describe the anchor
+
+- Relatively defined rectangel as a starting point for the fixed offsets
+
+4. When an anchor looks like this, which properties of the Rect Transform will appear?
+
+- Left, Right, Top and Bottom
+
+5. What is the purpose of the pivot?
+
+- The location about which we scale and rotate
+
+6. Name this component
+
+- Transform
+
