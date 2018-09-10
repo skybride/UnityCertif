@@ -1,0 +1,50 @@
+Improving Gameplay
+
+*Adding Moles aka cubes for projectiles to shoot at
+
+- Create a MoleSpawner GameObject
+- Create a RandomSpawner.cs
+- Create a MoleLifetime.cs
+
+[RandomSpawner.cs] -> Given by Sam
+
+public float interval = 5;
+public GameObject prefab;
+public float spawnRadius = 5;
+float lastSpawnTime = 0;
+
+void Update() {
+	if(lastSpawnTime + interval < Time.time)
+	{
+		var randomOffset = Random.insideUnitSphere * spawnRadius;
+		Instantiate(prefab, transform.position + randomOffset, transform.rotation);
+		lastSpawnTime = Time.time;
+	}
+}
+
+[Mole.LifeTime.cs] -> Give by Sam
+
+float startTime;
+
+void Start()
+{
+	 startTime = Time.time;
+}
+
+void Update()
+{
+	if(startTime + duration < Time.time)
+	{
+		Destroy(gameObject);
+	}
+}
+
+void OnCollisionEnter(Collision collision)
+{
+	print("Score!");
+	Destroy(collision.collider.gameObject);
+	Destroy(gameObject);
+}
+
+Add to BallSpawner and ProjectileMovement and TEST!
+Adjust and Tune!

@@ -1,0 +1,64 @@
+Public vs Private
+
+Public: exposes parameters to inspector and to other scripts
+
+Private: can only be used in particualr method
+
+public float apples;
+public float oranges;
+
+void Start()
+{
+	print ("Average = "+ Average(apples, oranges));	
+}
+
+float Average (float a, float b)
+{
+	sum float = a + b;
+	return = sum /2; 
+}
+
+NOTE: 'float Average' is a method that does an average calculation every time it is called.
+Since it is called in the 'Start()' function with 'float apples;' and 'float oranges' passed in as the arguments.
+
+Average = 0 in the Console window.
+
+Seems strange but if you add Component of this C# script on to a GameObject -> You will notice that there will be slots of the float value of apples and oranges as they were not declared when instantiated.
+
+ex:
+
+public float apples = 1;
+public float oranges = 3;
+
+void Start()
+{
+	print ("Average = "+ Average (apples, oranges));
+} 
+
+---
+in the console window: Average = 2
+
+---
+
+1. In which of these areas is it possible to declare a public or private variable?
+
+- B
+
+2. What is the name of the public variable in the following code snippet?
+
+- axisName
+
+3. With reference to the code fragment below...
+
+1 = C : Joystick = Class
+2 = D : axesToUse = Public Variable
+3 = B : m_StartPos = Private Variable
+4 = A : OnEnable() = Method/function
+
+4. Which of these variables is private?
+
+- m_UseX
+
+5. Which line number would be responsible for creating an error?
+
+-  4

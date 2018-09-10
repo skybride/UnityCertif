@@ -1,0 +1,41 @@
+Variables Int Float
+
+Variables: box that stores certain values
+
+int vs float: 
+int = whole numbers
+float = fractions are possible decimals are possible (ending with f)
+
+Operations = variable + variable = sum
+
+
+---
+
+1. What type is someVariable?
+float someVariable = 2;
+
+- float
+
+2. Match the type to the expression
+
+1 = D : float = 1.0f
+2 = A : float or int = A
+3 = B : int = int someInt;
+4 = C : other = "Some text"
+
+3. What is the result type of the following operation?
+2+2
+
+- int
+
+4. What is the type of someResult?
+float someFloat = 3;
+int someInt = 3;
+??? someResult = someFloat + someInt;
+
+- float
+
+5. Whic is the correct suffix for floating point numbers?
+
+- f
+

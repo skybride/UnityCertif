@@ -1,0 +1,71 @@
+Quiz 33 Time DeltaTime
+
+Though Process:
+
+void Update() {
+	transform.position - transform.position + new Vector3(0,0,1);
+}
+
+---
+
+public float speed = 5;
+
+void Update() {
+	transform.position - transform.position + new Vector3(0,0,speed);
+}
+
+What units is speed in?
+Meter's per second?
+
+---
+We need to know the frame rate aka Time.deltaTime
+
+---
+
+public float speed = 5;
+
+void Update() {
+
+	Vector3 positionDelta = new Vector3(0,0,speed * Time.delta);
+	transform.position - transform.position + positionDelta;
+}
+
+NOTE: 
+could have left it:
+
+transform.position - transform.position + new Vector3(0,0,speed * Time.deltaTime);
+
+HOWEVER this is very long to ready
+It is better to keep code short and concise.
+
+Set 'new Vector3(0,0,speed * Time.deltaTime);' to = a variable of type Vector3 with name positionDelta
+
+If code gets long extract into variables -> If starts to become too long again extract into a method.
+
+---
+
+NOTE: DELTA TIME corresponds with frame rate.While frame rate decreases and time between frames increase -> movement stays constant because that delta time will correspond to that frame rate.
+
+---
+
+Quiz
+
+1. Which is the correct method call to get the previous frame time?
+
+- Time.deltaTime
+
+2. Which case requires deltaTime?
+
+- Accelerating by 3m/s every second
+
+3. Where would you do something on every frame?
+
+- Update()
+
+4. How long does a frame take?
+
+- It depends on how much work needs to be done
+
+5. Which of the following translates the GameObject by 1 world unit?
+
+- transform.position = transform.position + new Vector3(1,0,0);

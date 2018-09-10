@@ -1,0 +1,51 @@
+Camera API ScreenPointToRay
+
+*Creating a ray that projects into the world
+
+NewScript -> Name it CameraAim
+
+Debug.DrawRay() -> Unity pre made Method
+
+---
+
+void Start() {
+	Debug.DrawRay(transfomr.position, Vector3.forward, Color.red, 5);
+}
+
+Test -> You should see the red ray in the Scene view on play
+
+---
+
+void Start() {
+	Camera ourCamera = GetComponent<Camera>();
+	Ray aimRay = ourCamera.ScreenPointToArray(Input.mousePosition);
+	Debug.DrawRay(aimRay.origin, aimRay.direction, Color.red, 5);
+}
+
+---
+
+Move everything into 'void Update' and remove the '5' duration from Debug.DrawRay method to see what happens every frame
+
+---
+
+Quiz
+
+1. What is returned by ScreenPointToRay?
+
+- A 
+
+2. What are the arguments to ScreenPointToRay?
+
+- Screen space coordinates
+
+3. Which component of the Ray object gives us the vector along which Ray points?
+
+- .direction
+
+4. Which of the following functions would be best suited to helping debug a 'Ray' that doesn't seem to be pointing in the correct direction?
+
+- Debug.DrawRay()
+
+5. How do we get the mouse coordinates in screen space?
+
+- Input.mousePosition

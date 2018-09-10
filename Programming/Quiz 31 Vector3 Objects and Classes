@@ -1,0 +1,55 @@
+Vector3 Objects and Classes
+
+Objects and Classes:
+
+Object: 
+-> collection of methods and/or variables
+
+Classes: 
+-> Blueprints of values which Objects use
+
+ex: ClassA -> Object1
+	ClassA -> Object2
+	ClassA -> Object3
+
+If Objects were gameObjects for ex -> they would all share the same blueprints and carry out the same methods or functions.
+
+---
+Vector3 variable: built-in Unity type that is an object with 3 dimensional vectors
+
+ex:
+
+void Start (){
+	Vector3 currentLocation = new Vector3 (1.0f,2.0f,3.0f);
+}
+
+NOTE: Vector3 is the type, currentLocation = name of the variable -> new repersents a new object Vector3 is the new object's type that will require a value for x,y,z
+
+---
+(Now if we add Vector3 home = new Vector3 (x,y,z);)
+Find the location between
+
+Vector3 locationToHome = currentLocation - home;
+print("Distance to home is "+ locationToHome.magnitude);
+
+---
+
+1. Which is the correct way to create a 3D vector?
+
+- new Vector3(1.0f, 1.0f, 1.0f);
+
+2. Which of the following is a valid operation on vectors (assume variables a and b contain Vector3)
+
+- a.magnitude
+
+3. In the following lines of code, why do we use a dot?
+
+- To access the contents 'x' of the variable 'a'
+
+4. What data is a Vector3 made up of?
+
+- 3 floats
+
+5. What is an example of an object?
+
+- A component on a GameObject

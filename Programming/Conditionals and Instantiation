@@ -1,0 +1,134 @@
+Conditionals and Instantiation
+
+ForceMode.Impulse = constant -> doesn't change during the play of the game.
+
+---
+ex:
+public float force = 5;
+
+void FixedUpdate() {
+	Rigidbody rb = GetComponent<Rigidbody>();
+	rb.AddForce(new Vector3(0,0,force), ForceMode.Impulse);
+}
+
+Constant gives meaning to a value -> value you being that impulse is preferred over a full force
+
+...
+
+What if we only wanted to apply this force during the first frame -> We need a conditional statement aka boolean -> bool
+
+---
+ex:
+public float force = 5;
+
+void FixedUpdate() {
+	bool myBool = false;
+	if (myBool)
+	{
+		Rigidbody rb = GetComponent<Rigidbody>();
+		rb.AddForce(new Vector3(0,0,force), ForceMode.Impulse);	
+	}
+}
+
+NOTE: ball wont move
+
+---
+ex:
+public float force = 5;
+
+void FixedUpdate() {
+	bool myBool = true;
+	if (myBool)
+	{
+		Rigidbody rb = GetComponent<Rigidbody>();
+		rb.AddForce(new Vector3(0,0,force), ForceMode.Impulse);	
+	}
+}
+
+NOTE: ball will move
+
+---
+
+ex:
+public float force = 5;
+
+void FixedUpdate() {
+	bool hasAlreadyLaunched = true;
+	if (myBool)
+	{
+		Rigidbody rb = GetComponent<Rigidbody>();
+		rb.AddForce(new Vector3(0,0,force), ForceMode.Impulse);	
+	}
+}
+
+NOTE: now bool will only be accessible in FixedUpdate method. We need to make it a global variable and set it to false -> since we dont want the projectile to fire right away
+
+---
+ex:
+public float force = 5;
+bool hasAlreadyLaunched = false;
+
+void FixedUpdate() {
+	
+	if (!hasAlreadyLaunched) 
+	{
+		Rigidbody rb = GetComponent<Rigidbody>();
+		rb.AddForce(new Vector3(0,0,force), ForceMode.Impulse);	
+	}
+}
+
+NOTE: '!hasAlreadyLaunched' = if NOT hasAlreadyLaunched.
+This code will run but the projectile will shoot off quickly. We want it to only fire off quickly in the first frame
+
+public float force = 5;
+bool hasAlreadyLaunched = false;
+
+void FixedUpdate() {
+	
+	if (!hasAlreadyLaunched) 
+	{
+		Rigidbody rb = GetComponent<Rigidbody>();
+		rb.AddForce(new Vector3(0,0,force), ForceMode.Impulse);
+		hasAlreadyLaunched = true;	
+	}
+}
+
+NOTE: The projectile begins at 'hasAlreadyLaunced' = false -> In the FixedUpdate method -> if 'hasAlreadyLaunched' has NOT launched Rigidbody will add an Impulse force. Then 'hasAlreadyLaunched' will be = to true -> Therefore the impulse launch during the 'Fixedupdate' will not run again.
+
+ONLY applying the impulse once. Accelarates once and then is proportionally the same.
+
+---
+
+[Instantiation]
+
+Create a projectile spawner:
+- Create a prefab of the projectile
+- Create a new empty GameObject
+- Create a new script to add on to GameObject
+- Create a public GameObject variable to have a reference point exposed in the Inspector
+- In the Start() method call the instantiate method ->
+
+public GameObject prefab;
+
+void Start() {
+	Instantiate(prefab, transform.position, transform.rotation);}
+}
+
+---
+
+[Adding an Onclick]
+
+public GameObject prefab;
+bool mouseClicked = false;
+
+void Start() {
+	
+}
+
+void Update() {
+	if(Input.GetMouseDown(0))
+	{
+		Instantiate(prefab, transform.position, transform.rotation);
+		mouseClicked = true;
+	}
+}

@@ -1,0 +1,72 @@
+Fixed Update
+
+*Similar to Update but using physics
+*Uncheck gravity on the Rigidbodyvia the Inspector for this
+
+Add a Rigidbody -> to allow object to collide
+
+NOTE: Physics objects move due to force
+
+---
+
+public float force = 5;
+
+void Update() {
+
+	Rigidbody rb = GetComponent<Rigidbody>();
+
+	rb.AddForce(new Vector3(0,0,force));
+}
+
+
+
+NOTE: Remember -> when dealing with Rigidbodies always use FixedUpdate instead of Update
+
+Therefore:
+
+public float force = 5;
+
+void FixedUpdate() {
+
+	Rigidbody rb = GetComponent<Rigidbody>();
+
+	rb.AddForce(new Vector3(0,0,force));
+}
+
+Why?
+
+Update frame can take various amounts of time depending on what needs to be done. With physics calculations physics needs to happen at a regular time interval.
+
+Edit-> Project Settings -> Time:
+
+TimeManager: Fixed Timestep has a value and it can be adjusted
+
+---
+
+Quiz 
+
+1. In which method should you do work relating to Physics?
+
+- FixedUpdate()
+
+2. Order the following based on order of execution:
+
+A = Start()
+C = FixedUpdate()
+B = Update()
+D = LateUpdate()
+
+3. Which of the following lines of code adds a force to a GameObject?
+
+- Rigidbody rb = GetComponent<Rigidbody>();
+rb.AddForce(new Vector3(0,0,force));
+
+4. What is the correct definition of FixedUpdate?
+
+- void FixedUpdate(){
+	
+}
+
+5. What is the time between FixedUpdate calls?
+
+- Fixed but configurable (0.02)

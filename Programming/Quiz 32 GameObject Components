@@ -1,0 +1,81 @@
+GameObject Components
+
+Ex: 
+Create a Sphere GameObject -> Rename it Projectile 
+Create a Cube GameObject -> Rename it Target
+Create a new C# script -> Name it ProjectileMovement
+
+Thought Process:
+In order to move Sphere we need to have access to the gameObject's transform
+
+void Start()
+{
+	Transform trans = GetComponent<Transform>();
+	trans.position = new Vector3 (1,2,3);
+}
+
+NOTE: 
+Transform = type
+trans = variable name
+GetComponent = pre made Unity function
+<> = Type of component to look for in this case 'Transform'
+
+---
+
+to expose in the Inpsector:
+
+public Vector 3 newPosition;
+
+void Start()
+{
+	Transform trans = GetComponent<Transform>();
+	trans.position = newPosition;
+}
+
+---
+to use in a method
+
+public Vector 3 newPosition;
+
+void Start()
+{
+
+}
+
+public void UpdatePosition()
+{
+	Transform trans = GetComponent<Transform>();
+	trans.position = newPosition;
+}
+
+---
+
+[Calling a method from another Script Component]
+
+void Start() {
+	ProjectileMovement projectileMovementObject = GetComponent<ProjectileMovement>();
+	projectileMovementObject.UpdatePosition();
+}
+
+---
+
+1. Which of the following lines of code correctly gets a render component?
+
+- Renderer r = GetComponent<Renderer>();
+
+2. Which of the following methods can be called from outside the class?
+
+- Square
+
+3. What type is returned from the following line of code?
+'GetComponent<Collider>()'
+
+- Collider
+
+4. 'GetComponent' is a function used to find components of a certain type. Where will it search for components.
+
+- On the current GameObject
+
+5. Which of the following is a component of this GameObject?
+
+- ProjectileMovement

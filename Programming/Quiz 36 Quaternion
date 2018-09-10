@@ -1,0 +1,89 @@
+Quaternion
+
+
+In Script aimComponent
+
+public Ray GetAimRay() {
+	Camera ourCamera = GetComponent<Camera>();
+	Ray aimRay = ourCamera.ScreenPointToArray(Input.mousePosition);
+	Debug.DrawRay(aimRay.origin, aimRay.direction, Color.red, 5);
+	return aimRay;
+}
+
+Note: there must be a 'return' in this case aimRay or else there will be an error
+
+In Script BallSpawner
+
+public GameObject prefab;
+public CameraAim aimComponent;
+
+void Update() {
+	bool mouseDown = Input.GetMouseDown(0);
+	if(mouseDown)
+	{
+		Instantiate(prefab, transform.position, transform.rotation);
+	}	
+}
+
+---
+Via the Inspector while clicking on BallSpawner GameObject -> drag and rop Main Camera into Aim Component slot
+
+---
+Now during the instantiate of ray we will add:
+
+public GameObject prefab;
+public CameraAim aimComponent;
+
+void Update() {
+	bool mouseDown = Input.GetMouseDown(0);
+	if(mouseDown)
+	{
+		Ray aimRay = aimComponent.GetAimRAy();
+		Quaternion aimRotation = Quaterion.LookRotation(aimRay.direction);
+		Instantiate(prefab, transform.position, aim.rotation);
+	}	
+}
+
+NOTE: ORDER of ROTATION is IMPORTANT!
+TEST! There should be a problem! Projectile has to be adjusted
+
+
+In ProjectileMovement.cs
+
+bool hasAlreadyLaunched = false;
+
+void FixedUpdate() {
+	if(!hasAlreadyLaunched)
+	{
+		Rigidbody rb = GetComponent<Rigidbody>();
+		rb.AddForce(transform.forward * force, ForceMode.Impulse);
+		hasAlreadyLaunched = true;
+	}
+}
+
+'.forward' has been added to 'rb.AddForce(transform' and 'transform.forward' is now being multiplied by a 'force'
+
+---
+
+Quiz
+
+1. When combining twor rotations into a new rotation, is the order important?
+
+- Yes always
+
+2. Quaternion.Euler() builds a rotation out of 3 seperate rotations about x, y and z axes.
+Which order are these performed in?
+
+- z, x and y
+
+3. 'Quaternion.LookRotation()' is a...
+
+- Method on the class Quaternion
+
+4. Suppose I have a Vector3 which defines by rotation called 'a'. Supposing I want to rotate 90 degrees around this axis, how would I construct a Quaternion to do this?
+
+- Quaternion rotation = Quaternion.AngleAxis(90, a);
+
+5. How is a Quaternion internally stored?
+
+- Using x,y,z and w variables
