@@ -1,6 +1,6 @@
 Quiz 33 Time DeltaTime
 
-Though Process:
+Thought Process:
 
 void Update() {
 	transform.position - transform.position + new Vector3(0,0,1);

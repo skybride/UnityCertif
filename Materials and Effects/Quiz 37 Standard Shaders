@@ -1,0 +1,57 @@
+Quiz
+
+1. Which material property do you need to set to make the material look like a metal?
+
+- Metallic
+
+2. Where do you need to drag a texture asset to set it for the Albedo?
+
+- A
+
+3. Where should you click to get the given list of textures?
+
+- B
+
+4. What is a normal map?
+
+- An efficient way of creating surface detail
+
+5. What is the benefit of using a Normal Map instead of a Height Map?
+
+- It requires less work from the GPU shader
+
+6. What would be the most occluded area on a brick wall?
+
+- The gaps with the mortar
+
+7. What does an emissive area of a model look like?
+
+- It appears to glow
+
+8. What is the benefit of using a Height Map over a Normal Map?
+
+- It can achieve a parallax occulusion effect
+
+9. In which of the following cases would you need to use a detail map?
+
+- When you want to apply a high resolution but repeating detail to a model which already has a higher level detail
+
+10. What can be achieved using a Specular Setup that can't be achieved with the regular setup?
+
+- You can change the colour of specular reflection
+
+11. What is the difference between the 'Transparent' and 'Fade' Render Modes?
+
+- Fade makes specular reflections transparent as well as the diffuse reflections
+
+12. You want to ake an object appear to dissolve. Which Render mode would be most appropriate?
+
+- Cutout
+
+13. Why might you prefer to use the 'Standard shader' over the 'Standard(Specular setup)'
+
+- Gives a physical-based parameters for metallic objects
+
+14. What is the difference between the 'Fade' and 'Cutout' Render Modes
+
+- Cutout can only be fully opaque or fully transparent pixels

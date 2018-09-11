@@ -1,0 +1,72 @@
+[Part 1]
+
+KEY Focus:
+
+- Albedo
+- Metallic
+- Smoothness
+- Normal Map
+
+NOTE: Remember to use Project Scene tab to filter Materials when using pre-made material assets (from the store)
+
+Albedo: Base Color
+Metallic: Plastic vs Metallic 
+Smoothness: Dull vs Mirror 
+Normal Map: Surface Detail
+
+NOTE: All Materials can have a texture added -> via the square to the right of the dot
+
+---
+
+[Part 2]
+
+Key Focus:
+
+- Height Map
+- Occlusion
+- Emission
+- Detail mask
+
+Emission: Creates illusion /effect that the object is emitting light. (give glow)
+Occlusion: Offers information for which areas are most likely to be in shadow 
+	(not illuminated by light as strong)
+Height map: Creates depth (without it object appears flat...gives an occulusion effect)
+Detail mask: Secondary level of details (secondary maps) (Reducing size of texture)
+
+---
+
+[Part 3]
+
+Key Focus:
+
+- Specular standard shaders
+- render mode properties (to achieve transparency effects)
+
+Material Clarification:
+
+Most important property that makes up a material is it's shader.
+
+Shader: 
+- A program that runs on the GPU instead of the CPU.
+- It dictates how we can shade the surfaces of objects.
+- Depending on which shader -> there will be different properties available
+
+NOTE: An importan property is textures
+
+Texture:
+- can be made up of multiple materials like albedo, metallic, normal, height etc.
+
+Standard Shade: is physically based
+
+Specular shader is more traditonal (specular set up):
+- for metallic for ex. -> in standard this is a property that can be adjusted. In specular smoothness will affect the metallic apperence instead
+- Offers a tinge color to combine with albedo color
+
+Transparent Mode: Affects the Alpha mode in albedo -> lets you adjust the value
+
+NOTE: Use transparent for glass material objects, use fade for teleportation or ghost material objects
+
+CutOut: Has an Alpha Cutoff that either gives an full opaque look or transparent. 
+(Use for wires in grass for a game or fence behind a bus in a game)
+(Can use as affects for dissolving in and out)
+(More efficient that transparent)

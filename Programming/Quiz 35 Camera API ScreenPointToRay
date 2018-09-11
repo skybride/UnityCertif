@@ -18,7 +18,7 @@ Test -> You should see the red ray in the Scene view on play
 
 void Start() {
 	Camera ourCamera = GetComponent<Camera>();
-	Ray aimRay = ourCamera.ScreenPointToArray(Input.mousePosition);
+	Ray aimRay = ourCamera.ScreenPointToRay(Input.mousePosition);
 	Debug.DrawRay(aimRay.origin, aimRay.direction, Color.red, 5);
 }
 
