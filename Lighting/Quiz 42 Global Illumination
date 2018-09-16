@@ -1,0 +1,29 @@
+Quiz 42 Global Illumination
+
+1. Which of the following scenes would make the most noticeable use of GI?
+
+- A room with sunlight streaming in through a small opening
+
+2. Why is the wall to the centre-right green in the following image?
+
+- It is reflecting ligh off the right most wall
+
+3. What are the limitation sof GI in Unity?
+
+- It cannot be done at run-time
+
+4. Which of the following methods fo GI is best suited to mobile?
+
+- Baked
+
+5. Which method of illumination can cope with non-static objects in a scene?
+
+- Direct Illumination
+
+6. What does the Baked Resolution control?
+
+- The resolution of the GI cache per Unity unit
+
+7. How does final gather work?
+
+- It computes the last bounce of light at full Baked Resolution

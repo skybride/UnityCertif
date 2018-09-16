@@ -1,0 +1,28 @@
+Lightmaps
+
+
+Check out ARM Guide for Unity Developers
+https://developer.arm.com/docs/100140/latest/introduction
+
+Tip: Setup all lighting using pre computed real time GI -> and DISABLE Baked GI. You can see instant changes of Light.
+
+Why is this important? For Optimization -> Less memory used. Faster Load times.
+
+---
+[Hierarchy + Lighting]
+
+- Click on GameObject with the Lighting Tab instead of the Inspector showing.
+- Click on Object Maps -> You will see Charts
+- Charts: a collection of vertices (often in a square)
+
+[Scene]
+
+- Adjust from Shaded -> UV Charts.
+
+Texels are mapped onto geometery of scene.
+
+NOTE: Cubes that are stretched will have stretched texels. Which will cause optimization issues which is UV mapping
+
+Preserve UVs: If there is already a UV unwrap use it. If uncheck we get to control the unwrapping
+
+Auto UV Max Distance and Angle

@@ -1,0 +1,21 @@
+Quiz 44 Probes
+
+1. What is the difference between how light probes and reflection probes operate?
+
+- Light probesa are added in a group but reflection probes are added individually
+
+2. How does a dynamic object get the lighting from a light probe?
+
+- It averages the closest light probes to it
+
+3. How does the captured reflection from a reflection probe get applied to a specular object?
+
+- The cube map is used only when an object is within the probes area of influence
+
+4. How can reflections be generated on a static object?
+
+- Only by using a Reflection Probe
+
+5. What is the simplest way to layout a light probe group?
+
+- In a regular grid

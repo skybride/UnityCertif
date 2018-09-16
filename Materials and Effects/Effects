@@ -1,0 +1,109 @@
+Effects
+
+Image Effects:
+
+[Pre Import]
+Assets -> Import Package -> Effects 
+
+All Effects applied on camera level
+
+New Folder in Assets called Editor will appear with an ImageEffect Folder in that
+
+NOTE: You cannot drag and drop those scripts into the hierarchy
+
+---
+[Part 1]
+
+[Adding ImageEffects on to an Object]
+
+1. Select Main Camera -> Add Component -> Image Effects.
+
+Image Effects:
+- Other
+- Bloom and Glow*
+- Blur
+- Camera
+- Color Adjustments
+- Edge Detection
+- Displacement
+- Rendering
+- Noise
+
+[Bloom and Glow]
+- Bloom
+- BloomAndFlares(Deprecated)
+- Bloom (Optimized)
+
+NOTE: Add this Script and fiddle with adjustments
+
+[Colour Adjustments]
+
+1. Color Correction Curves -> Adjusts RGB
+
+2. Color Correction 3D Lookup Texture -> uses a texture slices of a 3D cube -> Looks up color in RGB and maps one color to another
+
+3. Color Correction Ramp -> (Ramp Texture) Less expressive
+
+4. Tonemapping -> Use Techniques to make HD better on a LD Screen
+
+5. Sepia -> Orangey hue
+
+6. Gray Scale -> All gray
+
+7. Contrast Stretch -> Setting high and low contrast bands (min/max)
+
+8. Contrast Enhance -> Enhances Contrast slightly
+
+NOTE: It adds a better color balance. More saturation
+
+[Other]
+
+1. Antialiasing -> Removes jagged edges
+
+NOTE: Correct method for Antialiasing should be add via Quality Settings NOT on Camera. 
+
+2. Screen Overlay -> Adds Texture on to screen as an effect
+
+---
+
+[Part 2]
+
+[Blur]
+
+1. Blur (optimized) -> Blur iterations, Downsample(less pixels)
+
+2. Blur -> Adds Blur on an object
+
+3. Motion Blur -> adding a trail (Needs a moving component), requires low frame rate
+
+[Camera]
+
+1. Camera Motion Blur -> Blur effect happens only when camera moves (slow exposure camera effect like in a racing car game)
+
+2. Depth of Field -> Set focal distance (bits of visible that has blur around), focus on transform, forcal size, Aperture(greater aperture -> create a greater depth of field)
+
+3. Tilt Shift -> (similar to depth of field) Only blurs top and bottom, or radial via blur area or max blur size, also has Downsample and Mode
+
+4. Vignette and Chromatic Aberration -> (ex could be use for cut back scene) adds a black ring border around scene
+
+NOTE: Vignette and Chromatic are lumped together but they are different affects
+
+[Noise]
+
+1. Noise and Grain -> On Play Mode grains move
+
+2. Noise and Scratches -> Gives an old film affect on Play mode
+
+[Displacement]
+
+1. Fisheye -> fish's point of view (wide eye lens)
+
+2. Twirl -> Twirl's image
+
+3. Vortex -> Similar to twirl -> but has more control (ex impression of seasickness in a game)
+
+[Edge Detection]
+
+1. Crease Shading -> Borderlands type effect -> Not photo realistic but offers standing out -> You can adjust smoothness as well
+
+2. Edge Detection -> You can leave only edges, similar to crease shading but you cannot adjust smoothness

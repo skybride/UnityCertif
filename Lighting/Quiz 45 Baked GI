@@ -1,0 +1,24 @@
+Quiz 45 Baked GI
+
+1. Rank the following in terms of their photo realism (highest to lowest)
+
+D. Directional Specular
+A. Directional
+B. Non-directional
+C. Direct Lighting Only
+
+2. When would you make the game design choice to use fog?
+
+- To not render objects that are far away in the scene
+
+3. What is the default source of Ambient Light?
+
+- The Skybox
+
+4. What type of object does this property take?
+
+- A Direction Light
+
+5. What is the default source of reflections (without any reflection probes in the scene)?
+
+- The Skybox

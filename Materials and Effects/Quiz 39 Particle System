@@ -1,0 +1,53 @@
+Quiz 39 Paricle System
+
+1. The number of particles in a system reaches a steady state after a certain amount of time. If there is no maximum defined, which properties affecet this steady state
+
+- Emission Rate and Lifetime
+
+2. What dictates how the particle moves in the system?
+
+- Velocity
+
+3. An Emission Rate of 100 means
+
+- Roughly 100 particles are emitted every second
+
+4. How could the velocity of a particle be changed after it's born?
+
+- By setting the Gravity Modifier
+
+5. Name the effect applied here
+
+- Custom Mesh
+
+6. When would you use a gradient instead of a curve?
+
+- Color over speed
+
+7. Name the particle option used
+
+- Color over Lifetime
+
+8. Name the particle option used
+
+- Size over Liftime - Random between 2 curves
+
+9. I want my particles to rotate faster just before they die. I need to...
+
+- Increase the value of the 'Angular Velocity' curve just before the end.
+
+10. When can a Sub Emitter be created?
+
+- When a particle collides with something
+
+11. What is controlled by the curve in "Texture Sheet Animation"
+
+- The animation frame
+
+12. When rotation is specified in one dimension for a billboard particle, whih axis will the partile rotate about?
+
+- Down the forward axis of the camera
+
+13. Why would you 'prewarm' a particle system?
+
+- So the system is in full swing when the sceen starts

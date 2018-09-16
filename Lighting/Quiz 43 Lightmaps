@@ -1,0 +1,21 @@
+Quiz 43 Lightmaps
+
+1. What is the effect of increasing the Auto UV Max Distance
+
+- More charts are merged if the Auto UV Max Angle permits
+
+2. What process should you use for designing the lighting in a scene if you intend to use Baked GI in th finished product?
+
+- Start by using Precomputed Realtime GI then switch when you're happy
+
+3. What effect does decreasing the Auto UV Max Angle have?
+
+- Increases the number of charts if any were merged
+
+4. Which preview textures will be displayed if we are only using Precomputed Realtime GI?
+
+- Charting, Albedo, Emissive, Realtime Intensity, Realtime Direction
+
+5. Which of the following options would allow you to visualise the UV unwrap of a lightmap?
+
+- UV Charts

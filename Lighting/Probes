@@ -1,0 +1,39 @@
+Probes
+
+[Key Focus]
+- Dynamic Objects in illuminated scenes.
+- Reflection Probe
+
+---
+
+1. Create GameObject Cube
+2. Via Inspector change Static from unchecked to check (Everything, Lightmap Static ,Occuluder static, Batching Static, Navigation Static etc)
+3. Create a Capsule GameObject -> Make Static unchecked via the Inspector
+ 
+NOTE: When an object is dynamic -> It appears darker in comparison to everything that is being Illuminated Globally.
+
+Light Probe: A light probe receives all the global illumination around it at bake time and then at runtime it helps dynamic objects tell how they should be illuminated
+(Right Click in Hierarchy -> Light -> Light Probe Group)
+Each point is a light probe -> Dynamic Object illuminates according to light probes and purple planes.
+
+---
+
+[Hierarchy]
+- Select Light Probe Group
+
+[Inspector]
+- Select All
+- Duplicate Selected
+- Repeat to fill Scene
+
+NOTE: in a real game you would want a limited amount of light probes in the Scene. Scattered in different areas, some in dark areas and some near the object.
+
+[Reflection]
+
+Create a mirror like material -> Opaque -> Metallic: 1 -> Smoothness: 1.
+
+Object will show the color of the Scene SkyMap not the box it is.
+
+Add a Lighting -> Reflection Probe and adjust the probe to be surrounding the Object. The object will not be reflecting the interior of the dark box. However it will not react to any light sources. (not reflect and light bounces or bleeds on to the object)
+
+NOTE: Reflection Probes are Static

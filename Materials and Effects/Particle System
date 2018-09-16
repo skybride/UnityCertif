@@ -1,0 +1,83 @@
+Particle System
+
+Emitters can be used to make smoke trails, fire effects and EXPLOSIONS
+
+In Inspector -> Add Component -> Add Particle System
+
+Hover over each particle to read description via the inspector.
+
+[Part 1]
+
+[Parts in Particle System]
+
+1. Renderer: RenderMode -> Billboard
+
+- Regeardless of orientation of camera or position billboard (if particle is in the shape of a cube) will make a square shape always face the camera (like billboard advertisment that always faces you)
+
+2. Start Speed: controls velocity of particles
+
+3. Start Lifetime: How far particles travel before dying
+
+4. Emission Rate: If increased more particles in the same lifetime at the same velocity and vice versa
+
+5. Max Particles: Affects Emission Rate -> puts a cap on how many particles can be created. More particles cannot be created until cap number of particles are dead. Gives a wave affect (think of wide angel shower gun in Contra).
+NOTE: being able to control max particles ensures Top performance
+
+6. Play On Awake: Awake on Play mode or via code
+
+7. Gravity Modifier: Effects on particles with gravity
+
+NOTE: Particles can also be affected by Wind! Setup a terrain add WindZone and add a Particle System to see what happens. (smoke effects, fire that is being blown by wind)
+
+8. Shape: Affects direction partiles emmits from 
+
+NOTE: Depending on radius set velocity of each particle can be different. Why? Starting points each particle is different.
+
+MESHRENDER Can be added on to shape as well!
+
+---
+
+[Part 2]
+
+[In SceneView]
+Particle Effect Preview: Pause|Stop|Simulate, PlaybackSpeed|PlaybackTime|ParticleCount
+
+REMEMBER Particle Count is affected by RATE + Lifetime + Max Number. (Good to know for render calculations to optimize game)
+
+1. Size over Lifetime -> Curve: Check out presets and adjust to learn more
+
+2. Size over Lifetime -> Random Between 2 Constants: Some particles are large, some are small, all arbitrary, it doesn't depend on lifetime.
+
+3. Size over Lifetime -> Random Between 2 Curves: Double clicking adds in a second control on each curve line. 
+
+4. Rotation Over Lifetime: Angualar Velocity is also curve adjustments you can make on Square particles to roatate. It can start slower and spin faster in the end or vice versa depending on curve.
+
+5. Color Over Lifetime -> Gradient: You can create a gradient of color with various color points added (similar to a curve in color aspect). Try adjusting Color over Lifetime and then Size over Lifetime!
+
+6. Color Over Lifetime -> Random Between 2 Gradients: Simialr to Size Over Lifetime|Random Between 2 Curves
+
+
+---
+
+[Part 3]
+
+1. Duration: (without Looping) it sets length of particles being emitted. With looping the cycle repeats after what ever value of duration is set (ex: Duration: 5s = cycles every 5s)
+
+2. Prewarm: Can only be used if looping is checked -> Creates the full particle emission. On Play it's as if the full duration took place instantly. Already at a steady rate regardless of Duration
+
+3. Start Delay: Delays for a set time before simulating particles
+
+4. Start Rotation: Particle emmits automatically at the set angle (does not rotate)
+
+5. Inherit Velocity -> Mode -> Initial: If speed is changed at runtime, it doesn't affect particles that have already been created 
+
+6. Inherit Velocity -> Mode -> Current: If speed is adjusted the particle velocity is affected.
+
+7. External Forces -> Multipler: How much Wind Zone can affect particles
+
+8. Texture Sheet Animation -> (Animated texture applied to particle like a flame): Frame Over Time: Can be Linear or Curved or Between 2 Constants.
+
+9. Collisions: 2 Properties: Plane or World. Particles can be affected with other colliders. (Instead of just going through other meshes) 
+
+10. Sub Emitters -> Birth|Collision|Death: Particles can spawn more particles. (Ex: if more particles added during death-> when particles die new particles can be spawned)
+NOTE: Sub Emitters are Child Objects of Emitters that can have Sub Emitters themselves

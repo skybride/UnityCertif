@@ -1,0 +1,40 @@
+Global Illumination
+
+*Create a dark cave/room with a slit in the roof
+
+Window -> Lighting:Scene -> Ambient Intensity: reduce to 0
+
+NOTE: Done at compile not at run time
+
+---
+
+[Getting Global Illumination working]
+
+Select all GameObjects the make up the dark room-> Static: Lightmap static, 
+there will be a baking process. Let the scene build. Hit Play
+
+---
+
+[Baking]
+
+Color Bleeding: Albedo color on GameObject when Globally Illuminated cast the same material color.
+
+[In Lighting Tab]
+
+Precomputed Realtime GI: You can move the lights. 
+
+Baked GI: You cannot move the lights. Uses less resources, less GPU and CPU time and requires less memory -> Great for Mobile Platforms
+
+
+[Baked GI]
+
+Baked Resolution: texels per unit -> lights being calculated and baked in are being saved as textures.
+
+NOTE: Texels per Unit value = How detailed. Better the quality -> longer bake time
+
+[In the Scene Tab]
+Find Shaded -> Baked
+
+Final Gather: Don't Check until Scene is set up with Global Illumination -> Than when complete game or level check Final Gather
+
+NOTE: You can uncheck 'Auto Generate' and manual select build when ready to avoid constantly waiting

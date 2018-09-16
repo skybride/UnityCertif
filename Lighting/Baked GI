@@ -1,0 +1,40 @@
+Baked GI
+
+Key Focus:
+- General GI
+- Fog
+
+NOTE: Checkout Unity API: Directional Lightmapping
+
+---
+
+
+[General GI] 
+main setting that you'll be interested in is the directional mode.
+In lightmaps you can store general direction that the ambient light is coming from. 
+(specular shader will make use of this abilty to tell how much light to reflect back)
+
+1. Non-Directional (stores no directional light information)
+2. Directional (stores some directional light information)
+3. Directional Specular (stores all information of light as if real time scene)
+Increasing Realism and also Increasing memory
+
+---
+
+[Fog]
+- Grays out an object. Does not have to render until close to object.
+
+[Fog Mode]
+- Linear
+- Exponential 
+- Exponential Squared
+
+[Density]
+- Higher = more opaque
+
+---
+
+[Lighting: Scene]
+
+Add Directional Light in the 'Sun' slot. If rotated the directional sun will mimic the sun in the skybox -> setting / rising
+

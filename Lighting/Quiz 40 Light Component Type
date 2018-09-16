@@ -1,0 +1,37 @@
+Quiz 40 Light Component Type
+
+1. Rotating this light will not change the lighting of the scene
+
+- Point
+
+2. Which type of light is this
+
+- Area
+
+3. Which type of light is this?
+
+- Spot
+
+4. Which type of light is this
+
+- Point
+
+5. Which type of ligh is this
+
+- Directional
+
+6. What is meant by a Culling Mask as it relates to lighting?
+
+- A selection of layers preventing GameObjects from being illuminated by one light
+
+7. What effect is being used here?
+
+- Cookie
+
+8. What effect is this?
+
+- Halo
+
+9. Name the following effect
+
+- Lens flare

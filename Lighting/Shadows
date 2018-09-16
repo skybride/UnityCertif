@@ -1,0 +1,40 @@
+Shadows
+
+[Key Focus]
+
+- Hard/Soft Shadow
+- Shadow Acne
+
+---
+
+NOTE: Section 10 Lecture 71 : Sam leaves a link about Shadows explained by microsoft
+
+Shadow Effect Requirments:
+- Shadow must be placed on 2 properties
+
+1. the light itself
+2. the GameObject
+
+ex: Light|Sphere|Plane
+1. Shadow on light which will create the shadow
+2. The GameObject that will recieve the shadow is the Plane -> this is where the shadow will appear. NOT the Sphere. 
+
+[On Plane Object Via Inspector]
+1. Find Mesh Renderer: and check 'Recieve Shadows'
+2. Cast Shadows: On
+
+[On the Light Via Inspector]
+1. Shadow Type: Hard Shadows (only in space)| Soft Shadows: and Adjust Strength
+
+Try it OUT! Adjust the rotation...what happens to the shadow?
+
+---
+
+Shadow Acne: Happens when resolution is low -> stores some points incorrectly. 
+
+Shadow Acne can be cured by Bias and Normal Bias
+
+Bias: If low -> acne is worse. If High -> Shadow appears to be detached (Test it out by place sphere on the plane-> watch what happens when bias is tweaked. aka peter pan affect)
+
+Normal Bias: If increased -> shadow gets less. If low shadow acne is still there
+
