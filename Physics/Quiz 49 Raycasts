@@ -1,0 +1,69 @@
+Quiz 49 Raycasts
+
+Key Focus:
+
+- Raycast
+
+[How to Call Raycast]
+
+public BalisticSolver solver;
+
+void Update () {
+	var ray = new Ray(transform.position, transform.forward);
+	RaycastHit hitInfo;   // type Raycast with name hitInfo
+	if(Physics.Raycast(ray, out hitInfo))   //this is the raycast API call
+	{
+		solver.target = hitInfo.point;
+	}
+}
+
+NOTE: Raycast returns a bool, hit can either be true or false
+---
+
+1. How does a raycast work?
+
+- A line is projected until it hits something then it returns that point.
+
+2. Match the following methods to their use cases
+
+1 = A : Rigidbody + Collider = A solid object to move in code
+2 = D : Static Collider = Scenery which must block physics objects 
+3 = C : Trigger Collider = An Area that deals damage when entered 
+4 = B : Raycast = Checking if an AI can see the player
+
+3. Click the UI to change the collider shape visually
+
+- C
+
+4. Match the Collider names to their component symbols
+
+1. Cube = C
+2. Sphere = A
+3. Capsule = D
+4. Mesh = B
+
+5. How does a ray travel?
+
+- In a straight line
+
+6. Which is the default forward direction in Unity?
+
+- Z
+
+7. In C#, where can you use the 'out' keyword and what does it indicate?
+
+- Before a function argument or parameter. Indicates that parameter can be overwritten by the function
+
+8. What type is being stored in 'mysteryVariable'?
+'auto mysteryVariable = Physics.Raycast(ray, out hitInfo);'
+
+- a boolean
+
+9. What doe the vectors being passed in to this 'Ray' call represent?
+'new Ray(vector1, vector2)'
+
+- The start and the direction of the Ray
+
+10. Which of the following is a property of 'RaycastHit'?
+
+- point

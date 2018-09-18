@@ -1,1 +1,17 @@
 Quiz 46 Rigidbodies Gravity and Collisions
+
+1. What colour is the Collider in this image?
+
+- Green
+
+2. In Play mode, which properties enable a Game Object to drop from a height?
+
+- D
+
+3. When a Rigidbody component is added to a GameObject in order for it to interact with other objects you...
+
+- don't need to add a collider if there already is one
+
+4. Waht is the purpose of a Rigidbody?
+
+- To simulate physics of solid objects

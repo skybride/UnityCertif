@@ -1,0 +1,29 @@
+Triggers and Mesh Colliders
+
+*In order to have Trigger availabe for MeshColliders -> Convex must be checked
+
+
+---
+
+Quiz
+
+1. How do you add a force to a Rigidbody?
+
+- rb.AddForce(forceVector);
+
+2. What needs to be true about this collider mesh before it can be made a trigger?
+
+- It must be convex
+
+3. What does a Trigger Collider Component do when it comes into contact with another GameObject with a Collider Component?
+
+- Calls the 'OnTriggerEnter()' method on any Component of the current GameObjects, if it exists
+
+4. What are the differences between a Collider and a Trigger Collider?
+
+- The Collider blocks physics objects but the Trigger lets them through
+
+5. What did increasing thrust in this code do?
+'var rb = other.GetComponent<Rigidbody>(); rb.AddForce(gameObject.transform.up * thrust);'
+
+- Increased the magnitude of the force applied to the Rigidbody

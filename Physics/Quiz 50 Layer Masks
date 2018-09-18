@@ -1,0 +1,32 @@
+Quiz 50 Layer Masks
+
+Layer mask: selectively ignore Colliders when casting a ray
+
+(Not doing this will cause Jitters with Raycast hits the GameObject)
+
+NOTE: layer mask use the bits in an integer to define which layers are active and inactive
+
+<< : means shift
+
+---
+
+1. How can you ensure that a Raycast only hits objects on the "Hoops" layer?
+[Tags & Layers] -> User Layer 12 = Hoops
+
+- var layerMask = 1 << 12;
+
+2. How can you limit the depth of the Raycast to 200 Unity units?
+
+- Physics.Raycast(ray, out hitInfo, 200)
+
+3. By default what is the 'queryTriggerInteraction' parameter set to?
+
+- Use the Global default
+
+4. What is the default 'maxDistance' value of a Raycast if now value is specified?
+
+- Infinity
+
+5. What is the type of a layerMask parameter?
+
+- int

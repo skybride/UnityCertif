@@ -1,1 +1,12 @@
 Rigidbodies Gravity and Collisions
+
+Key Focus:
+- Collider
+- Rigidbodies
+
+Collider: In Scene Tab: Shaded -> change to wire frame to see the collider
+
+Kinematic: moved with code not the Physics system. Therefore anything that can move should have Kinematic checked 
+
+
+

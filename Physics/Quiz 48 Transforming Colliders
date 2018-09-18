@@ -1,0 +1,31 @@
+Quiz 48 Transforming Colliders
+
+[Key Focus]
+- Movement
+- Composite Collider
+
+NOTE: GameObject -> Break Prefab Instance allows you to make adjustments to your prefab in the Hierarchy via the Inspector without affecting the saved Prefab in the Project pane
+
+Composite Collider: Creating you own collider on a GameObject with multiple colliders
+
+---
+
+1. Which are the scale properties of the Capsule collider?
+
+- Radius and Height
+
+2. How can you work around the restriction that colliders must be convex on this object?
+
+- By creating empty sub-objects with a collider for different sections of the object, scaling and rotating them
+
+3. When moving a collider programmatically, what is important to do?
+
+- Add a Rigidbody and set it to Kinematic
+
+4. When should you check the Rigidbodies 'Is Kinematic' property?
+
+- When you intend to control the objects position throught its transform and not physics
+
+5. What does this property expect?
+
+- A GameObject or Prefab
