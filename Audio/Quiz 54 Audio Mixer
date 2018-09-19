@@ -1,0 +1,60 @@
+Quiz 54 Audio Mixer
+
+Key Focus:
+
+- Audio Mixer Benefits (tweaking groups of volume levels)
+
+NOTE: Audio Mixer provides 1 control panel for all audio scenarios
+Audio Sources -> go into a mixer -> mixer goes to Audio Listener -> giving you full control in one place.
+
+[Asset : Audio Mixer]
+1. In Assets -> Right Click -> hover over Create -> Select Audio Mixer
+2. Name it MainMixer
+NOTE: if you plan on having multiple different groups of sound you might have more mixers
+
+3. Open MainMixer: 
+- Mixer
+- Snapshots
+- Groups
+- Views
+
+[Groups]
+1. select '+' to add a group -> name it Environment
+2. select Background sound(gameobject that was added a few videos back)
+3. via Inspector -> Audio Source: Output -> Select Environment Group
+4. In Play mode -> watch Audio Mixer pane.
+5. Edit in Play Mode -> will actually save edits when Play Mode is exited
+---
+NOTE:
+Think of having 1 group for vehicle sounds, and 1 group for enviroment and 1 for player.
+If there are different vehicles -> create a car, create a truck, create a bus for ex. And group them all into vehicle. 
+
+Select prefab car in hierarchy -> in Inspector input the output (car) repeat for truck prefab and bus prefab.
+
+Now in Audio mixer -> Vehicles should have child car and child truck. Now you can adjust the sound of each 
+
+---
+Snapshot: keep track of preferred audio level. (Save state as you test sound settings)
+Views: Restrict views so you can focus on a groups you want to edit
+
+---
+
+1. Audio Sources can be connected to which of the following items?
+
+- Audio Mixer Groups
+
+2. Where does the Audio Mixer sit in the audio pipeline?
+
+- Before the Listener but after the Audio Sources
+
+3. What is the role of a mixer snapshot?
+
+- To save the settings of all mixer groups
+
+4. How can a view help tune audio in large scenes?
+
+- By reducing visible groups 
+
+5. Why might you want to use a mixer in a scene even if it has no special effects applied?
+
+- To centralise volume control in the scene

@@ -1,0 +1,74 @@
+Quiz 53 Curve Editing
+
+Key Focus:
+- Audio Source: Curve Editing (Graph adjustments)
+
+[Audio Source]
+- Volume 
+- Spatial
+- Spread
+- Reverb
+- 3D Sound Settings
+
+Spatial: 
+- Adjusting where the sound is coming from
+- Can adjust node points on the graph to make sound feel like it is coming from all around with no particular direction
+
+Spread:
+- 0 -> 360
+- The angle of the Left and Right Audio Source which affects the sound.
+
+NOTE: 
+- 360 -> Left and Right Speaker(audio source) would be behind the listener
+- 180 -> on either side of the Audio Listener (the ears)
+
+Reverb:
+- 0 -> 1
+- therefor it either contributes or doesn't contribute
+
+AudioSource: 3D Sound Settings: Volume Rolloff:
+- Logarithmic  Rolloff
+- Linear Rolloff
+- Custom Rolloff
+
+NOTE: Logarithmic is the most accurate sound behaviour
+
+ex: 
+1. Create a cave -> this will be the area for 2D sound -> with reverb echo
+2. Place a Background Sound of birds tweeting in the area outside of the tunnel (this will be your 3D sound area)
+
+---
+In the 3D sound area player should feel sound coming at the same loudness. In the cave no bird sound should be heard. At the mouth of the cave light bird sounds should be heard
+
+3. Select FBSController and place it slightly inside the cave
+4. Select the Background Sound GameObject -> Audio Source: Graph -> Select Spatial only (green)
+5. Double click to make a node on the graph -> points should be on either side of the red line
+6. Right of the line is inside the cave so spatial sound should be at 1.0 To the right of the red line spatial sound node should be placed at 0.
+7. In Play mode you should see the red line (aka the listener) move and sound should be emitting accordingly
+
+TRY IT!
+
+Eventually the spatial blend should be triggered as Player walks toward mouth of cave.
+
+---
+
+1. What is the default volume curve drop-off?
+
+- Logarithmic
+
+2. How would you adda control node to this graph?
+
+- Double click the blue line
+
+3. For each of the different values of Spread, which best describes the location of the speakers in 3D space?
+
+1 = C : 0 degrees = In the direction of sound
+2 = D : 90 degrees = At right angles to each other
+3 = B : 180 degrees = Opposite each other
+4 = A : 360 degrees = Opposite to the direction of the sound
+
+4. Whcih properties are eligible for curve editing?
+- Spatial, Volume, Spread, Reverb
+
+5. What does the red line on this graph indicate?
+- The distance of the Audio Source from the Listener

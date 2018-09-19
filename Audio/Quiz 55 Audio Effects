@@ -1,0 +1,67 @@
+Quiz 55 Audio Effects
+
+*While in Play Mode and in the Audio Mixer Tab -> Hit ESC to expose Edit in Play Mode
+
+Audio Mixer : Audio Effects
+
+Audio Mixer -> Select a group -> via the Inspector an 'Add Effect' is available
+OR you can select 'Add..' underneath each group from the Audio Mixer pane
+
+Lowpass: allows low frequency below a certain value
+
+Highpass: allows high frequency above a certain value
+
+NOTE: ORDER MATTERS!
+
+ParamEQ:
+- Center frequency
+- Octave range
+- Frequency gain
+
+Give you the ablity to boost a frequency, change its width and where the center of the frequency is
+
+Pitch Shifter:
+- Creates either a higher or lower pitch
+
+Echo: 
+- Delay
+- Decay (increases -> makes trotting sound)
+- Max channels
+- Drymix
+- Wetmix
+
+Chorus: 
+(similar to Echo)
+- creates multiple of the same sounds
+
+Normalize: 
+- Adjusting sounds to be the same sound if there are higher and lower parts
+
+Send and Receive:
+- links
+ex: Send on Vehicle, Receive on Character
+
+---
+
+1. Where would you edit the properties for any effect?
+
+- The Inspector
+
+2. Why are these two groups mirroring each other? (Hint, the answer is in the image)
+
+- The Environment group is 'sending' to the Character group
+
+3. Match the effect to the most appropriate use case
+
+1 = D : Pitch Shift = To Increse the frequency of the audio overall
+2 = C : Echo = To repeat the audio clip attenuated and delayed
+3 = B : Normalise = To attentuate high volume portions of an audio clip
+4 = A: Attentuation = To lower the volume of the audio clip overall
+
+4. Which of the following can affect the output heard by the Listener?
+
+- The order of Effects
+
+5. Where would you click to remove an Effect?
+
+- B or E

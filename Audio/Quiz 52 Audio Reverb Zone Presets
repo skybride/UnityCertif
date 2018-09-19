@@ -1,0 +1,41 @@
+Quiz 52 Audio Reverb Zone Presets
+
+KeyFocus:
+- Reverb Zones
+- Sounds Bouncing
+
+ex: walking into a tunnel and hearing more of an echo when cars drive by and footstep echos
+
+Test:
+1. Create a new empty GameObject -> Rename it ReverbZone
+2. Add Component -> Audio Reverb Zone: There is an outter and inner circle (min/max distance)
+3. Reverb Presets: Cave
+4. Adjust spheres so that they fit in cave
+5. Make Reverb in to a Prefab
+6. Duplicate spheres to fit the length of the cave 
+
+
+---
+
+1. Waht shapes of Reverb zone are allowed?
+
+- Sphere
+
+2. Why would you use a reverb zone?
+
+- To gradually fade in a reverb setting
+
+3. What happens when a listener is between the min and max distances from the Reverb Zone?
+
+- The effect is partially applied
+
+4. What happens when a Listener is located inside the min area of two reverb zones(assuming both zones have the same preset)
+
+- One of the two zone's settings is applied.
+
+5. Match the environment to the most appropriate preset
+
+1 = D : Padded Cell = 
+2 = C : Bathroom = Changing Room
+3 = B : Auditorium = Stadium
+4 = A : Parkinglot = Play ground

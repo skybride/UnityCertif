@@ -1,1 +1,71 @@
-Quiz 51 Audio Source Properties
+Quiz Audio Source Properties
+
+
+Key Focus:
+- 3d spatial sound
+- finding audio clips (freesound.org)
+- Adding in a Character
+- Dopler affect 
+-Playing with spatial blend and 3D sound
+
+Requirements:
+- Audio Source
+- Audio Listener
+
+[Adding in a Character]
+- Assets -> Import Package -> Characters -> Import
+
+[Spatial Blend]
+- 3D adds car zooming by fast sound
+
+[Dopler Affect]
+- ex ambulance driving by. Sounds quieter lower -> Higher and louder when close by.
+- 3D Sound Setting -> Doppler Level -> Increase creates a more noticable pitch edit
+
+NOTE: For Dopler Affect to work rigidbody must be removed. (Because it is Kinematic only)
+
+AudioSource.velocityUpdateMode -> checkout in Unity API
+
+
+
+---
+
+1. Where would you click to find all the Audio Clips in this project?
+
+- D
+
+2. Which property would allow your audio source to repeat continuously?
+
+- Loop
+
+3. Which of the following components has a volume property?
+
+- Audio Source
+
+4. How many Audio Sources are allowable per object?
+
+- No limit
+
+5. How many Audio Listeners are allowed per scene?
+
+- 1
+
+6. What does the doppler effect cause?
+
+- Compresses sound waves in the direction of movement
+
+7. Where is the FPSController located?
+
+- In the 'Characters' package
+
+8. What is the principle audible effect of 3D audio?
+
+- Volume decreases as the listener is further from the source
+
+9. Which property needs to be changed to make an Audio Source use 3D audio?
+
+- Spatial Blend
+
+10. Which component would you need to edit ti increase the Doppler effect?
+
+- Audio Source
