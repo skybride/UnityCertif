@@ -1,0 +1,41 @@
+Animator Controller Asset
+
+Key Focus:
+- Use pre-made Animator
+- Configuring Avatar(again)
+
+GameObject -> Animations -> or Multiple Animations -> Animator Controller (aka state controller)
+
+Avatar: Assigning bones to a body portait
+
+NOTE: Checkout Asset Store for Animations
+
+Test with UnityChan:
+1. Import from Asset Store
+2. Drag Prefab into Hierarchy
+3. Find Animator directory -> drag and drop Animator on to root of Prefab in Hierarchy (or through the Inspector with UnityChan selected)
+4. Enter Play mode!
+ 
+NOTE: To Configure Avatar -> find avatar (Models -> expand Character1_Reference -> find unitychanAvatar -> select it so you can view in the Inspector -> Click on Configure and do not save)
+
+---
+
+1. What do Animation assets require?
+
+- GameObjects (*sneaky be careful with this one)
+
+2. What is the purpose of the Avatar asset?
+
+- Allows the retargeting of humanoid animations
+
+3. A state in a controller usually corresponds to...
+
+- an Animation
+
+4. Animations are...
+
+- Assets based off GameObjects
+
+5. How is an Animation Controller added to a GameObject?
+
+- Click and drag onto the object in the hiearchy

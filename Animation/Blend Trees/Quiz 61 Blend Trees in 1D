@@ -1,0 +1,53 @@
+Quiz 61 Blend Trees in 1D
+
+Key Focus:
+
+- How to and when to create a blend tree to make a clean state machine
+
+---
+
+1. Right click in the Animator tab in the Base Layer -> Hover over Create State -> From New Blend Tree -> Rename 'Grounded'
+
+2. Create a Parameter to control the blend tree of type float -> name it forwardSpeed
+
+3. Double click on Grounded -> shows Blend Tree
+
+4. From the Inspector -> Adjust Blend Type to 1D -> adjust Parameter to forwardSpeed
+
+5. Under Motion -> Add Motion Field (Moving slider will show 0 (idle) and 1 (walking) in a preview)
+
+6. In Play Mode -> Adjust forwardSpeed in the Animator tab from 0 -> 1 -> 0.5 (Avatar should move from idle to walk to walk slow)
+
+---
+
+[Adding another Node to the Blend Tree]
+
+1. Double click Ground to open up Blend Tree and select Blend Tree to view in Inspector
+
+2. Adjust Grounded -> Blend Tree in the Inspector -> Select the '+' Under motion and lock the Inspector
+
+3. Find run animation and drag it into the now available slot
+
+NOTE: Putting this animation on a scale is perfect for analog type controls
+
+---
+
+1. Where should you click to start adding a new animation
+
+- B
+
+2. What ypes of components can a Blend Tree mix together?
+
+- Animations and Blend Trees
+
+3. When should you use a Blend Tree?
+
+- There are multiple animations that should all contribute to varying degreees to the final result
+
+4. What is responsible for controlling the blend in a Blend Tree?
+
+- The State Machine parameters
+
+5. How do you set a custom threshold for switching animations in 1D Blend Trees?
+
+- Altering D

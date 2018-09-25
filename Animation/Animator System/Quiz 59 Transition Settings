@@ -1,0 +1,51 @@
+Quiz 59 Transition Settings
+
+Key Focus:
+
+- Solo
+- Mute
+- ORDER MATTERS
+- Blend period
+
+Select in the Animator tab -> Base Layer -> Animation(ex walk) -> From the Inspector -> Transitions: Solo and Mute.
+
+They both have the same affect. The dictate the transition state
+
+[Blend Period]
+
+- Fixed Duration: if unchecked Unity normalizes
+- Transition Duration: affecd but fixed being checked or unchecked
+- Transition Offset: normalizes start times
+- Has Exit Time: checked = gives control when transition will stop if unchecked when ever transition is triggerd it will immediately stop (Animation wont finish)
+- Interruption Source: None| Next State| Current State| Current State Then Next State
+---
+
+*Blend between animations to make it look natural 
+ex: from crouch to walk -> pace should slow down -> does the feet match up
+
+---
+
+1. What does it mean for a transition to have 'Has Exit Time' set?
+
+- The transition will happen at an exact point in the animation cycle
+
+2. What does this length of time represent?
+
+- The transition duration
+
+3. What is the unit of measure of Transition Duration when this property is set?
+
+- In seconds * 
+
+4. What is the significance of the order of transitions?
+
+- The first that is possible will be taken
+
+5. State A is transitioning to state B. Suddenly another transition becomes possible too. Match the Interruption Source value to the expected behaviour
+*Very tricky
+
+1 = A : None = If state A and B can transition to C, then nothing happens 
+2 = B : Current State = If state A and B can transition to C, then A will transition to C
+3 = C : Next State If State B can transition to C, the the transition is interrupted
+4 = D : Next State then Current State = If state A and B can transition to C, then B will transition to C 
+

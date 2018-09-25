@@ -1,0 +1,58 @@
+Quiz 58 Transitions
+
+Key Focus:
+- Controlling when transitions happen
+
+Parameters:
+- Float
+- Int
+- Bool
+- Trigger
+
+[Bool ex]
+
+1. In the Animator pane select the '+' and add a 'Bool'
+2. Rename it 'walking'
+3. Click on the transition arrow between the Idle and Walking state
+4. In the Inpsector pane -> Find 'Conditions' -> select the '+'
+5. Add walking and set it to true 
+6. Uncheck 'Has Exit Time'
+7. Click on the transition arrow going from Walking to Idle -> condition should be set to walking as well but false 
+8. Uncheck 'Has Exit Time'
+
+---
+Enter Play Mode:
+
+Now in the Animator Tab -> if walking is checked (aka bool is true) GameObject should walk. When unchecked walking should stop immediately (Since Has Exit Time has been unchecked)
+
+NOTE: If 'Has Exit Time' was not unchecked player would have to wait for the full walk animation to finish.
+
+[Foot IK]
+- Inverse Kinematics -> makes GameObject look rooted to the ground
+Animation action selected (like walking or jumping) -> via the Inspector 'Foot IK' can be checked
+
+[Trigger ex]
+
+Very similar to Bool except in the Inspector there will be no true or false available in 'Conditions'
+
+---
+
+1. What are parameters in the context of Animators?
+
+- Variables which can be set to change execution of the state machine
+
+2. If you want a transition to fire once and only once in response to a parameter, which type should it be?
+
+- Trigger
+
+3. If a humanoid animation looks 'ungrounded' how can we fix that?
+
+- By enabling Foot IK on the animation
+
+4. Where do you click to add a parameter?
+
+- B
+
+5. What types of parameters are allowed in an Animator Controller?
+
+- Float Int, Bool, Trigger

@@ -1,0 +1,66 @@
+Quiz 63 Sub-State Machines for Jumping
+
+Key Focus:
+- Layers
+- Sub-state machines
+
+---
+Simplify:
+- JumpUp
+- MidAir
+- Fall
+- Crouch(after fall)
+
+In Animator tabe under Layers tab -> Select '+' symbol. 
+
+NOTE: New Layer and Base Layer will run in parallel
+
+---
+Layers need a weight for the state machine to recognize which animation to do.
+
+Layer: 
+- Weight: 0 - 1
+- Mask: Which part of the avatar gets affected ex: arm, leg, fingers etc
+- Blending: Override, Additive
+
+---
+In Animator -> Base Layer -> Right click -> Create Sub-State Machine:
+
+1. Double click on Sub-State Machine
+2. Drag and drop any states that you want to be in the Sub-State Machine
+3. When double clicked create a transition arrow from the State back to the (Up) Base Layer 
+
+NOTE: very similar to Base Layer -> Has Entry, Exit and Any State. Difference -> has (Up) Base Layer.
+
+When right clicked on New State Machine -> 2 Options: State transition(white) or State Machine transition (grey).
+
+To avoid the New StateMachine from having to understand sequences that happened from one node up -> While in the New StateMachine -> Transition from state to Exit not (Up) Base Layer. Then on the Base Layer, right click on New StateMachine and make a transition to Grounded. (Transtition arrows should be gray)
+
+This creates simple transitions between entry an exit nodes for state machines and other states. 
+
+Why? We can use this Sub-State Machine to organize all the different animations that make up the jump sequence
+
+Note New State Machine does not require a transition from the Any State or from an Entry State
+
+---
+
+1. When should you use a Sub-State Machine?
+
+- When you want to simplify a large state machine
+
+2. When should you use a State Machine layer?
+
+- When you want to run multiple animations at the same time
+
+3. What is meant by encapsulation as it relates to State Machines?
+
+- Sub-state Machines don't rely on the states of the parent and vice versa
+
+4. What does this state do?
+'(Up)Base Layer'
+
+- Provides a way of calling up to the parent State-Machine
+
+5. How do you refactor nodes "New State 0, 1 and 2" from "Base Layer" into a child "New State Machine"
+
+- Select B, C and D and drag them to A

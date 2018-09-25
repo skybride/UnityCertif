@@ -1,0 +1,44 @@
+Quiz 60 Any State
+
+Key Focus:
+- Simplifying by using Any State
+- Motion
+- Speed
+- Mirror
+- Cycle Offset
+
+Any State: 
+Transitions coming from Any State wil be triggered for any state that they're in.
+
+
+Speed: In the Animator tab -> any created paramters can be added to an animation (like walk) from the Inspector when it is selected. Check Paramter under speed and the multiplyier will have the new parameter created available (A parameter created from the Animator tab could be for example a float: walkFast)
+
+Mirror: Mirrors the animation
+
+Cycle Offset: Adjusting from which exact point in the animation the loop will start
+
+---
+
+Play with to learn how to tweak animation and mesh it so it looks fluid
+
+---
+
+1. What is the purpose of the Any State?
+
+- To avoid duplicate transitions when they are required from every state
+
+2. What does the Cycle Offset property do?
+
+- Shifts the start point of the animation
+
+3. What type is required to control this property?
+
+- Float
+
+4. Which of the following is a potential downside for the Any State?
+
+- You cannot change the transition based on the state it is coming from
+
+5. What is the function of the Mirror property of the animation state?
+
+- The animation gets flipped about the axis of symmetry

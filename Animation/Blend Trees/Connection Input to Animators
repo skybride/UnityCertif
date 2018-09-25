@@ -1,0 +1,70 @@
+Connection Input to Animators
+
+Key Focus:
+
+- Input instead of using Animator to activate trigger
+
+---
+
+Pre-work on GameObject:
+
+1. Select an Avatar to make into GameObject (ex. UnityChan)
+2. Create a 'Ground' GameObject for the Avatar to stand on
+3. Add a Rigidbody on to the Avatar
+4. Rigidbody -> Constraints -> Freeze Rotation: check X, Y, Z NOTE: if X, Y, Z is left unchecked Avatar will run into the ground (rotate into ground)
+5. Add a Capsule Collider
+
+---
+
+NOTE: Make Avatar the parent of the Main Camera to have 3rd person perspective
+
+Edit -> Project Settings -> InputManager
+
+Create Axes for input (keyboard input)
+
+---
+
+C# syntax:
+
+playerAnimator.SetFloat("forwardSpeed", v);
+playerAnimator.SetFloat("turnSpeed", h);
+
+ex:
+Rigidbody rb;
+
+public flaot upJumpSpeed = 5;
+public float forwardJumpSpeed = 1;
+
+void Awake()
+{
+	playerAnimator = GetComponent<Animator>();
+	playerAnimator.applyRootMotion = true;
+	rb = GetComponent<Rigidbody>();
+}
+
+
+void FixedUpdate()
+{
+	var v = Input.GetAxis("Vertical");
+	var h = Input.GetAxis("Horiztonal");
+
+	playerAnimator.SetFloat("forwardSpeed", v);
+	playerAnimator.SetFloat("turnSpeed", h);
+
+	if(Input.GetButtonDown("Duck")) //button for 'Duck' must be set in InputManager
+	{
+		playerAnimator.SetTrigger("duck");
+	}
+
+	if(Input.GetButtonDown("Jump"))
+	{
+		playerAnimator.SetTrigger("jump");
+		rb.velocity += Vector3.up * upJumpSpeed + transform.forward * forwardJumpSpeed;
+	}
+
+	bool grounded = Mathf.Abs(Vector3.Dot(rb.velocity, Vector3.up)) < 0.01;
+	playerAnimator.applyRootMotion = grounded;
+	playerAnimator.SetBool("grounded", grounded);
+}
+
+NOTE: jump, duck, turnspeed and grounded must be created in Animator

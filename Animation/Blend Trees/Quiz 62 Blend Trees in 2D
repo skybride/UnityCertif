@@ -1,0 +1,85 @@
+Quiz 62 Blend Trees in 2D
+
+Key Focus:
+- types of 2D Blends
+- manuvering left and right
+- expanded on blend trees
+- expanding on adding input
+
+2D Blend Types:
+- 2D Simple Directional -> strafe
+- 2D Freeform Directional -> strafe
+- 2D Freeform Cartesian -> adding left and right
+- Direct -> tweak individually
+
+In Animator -> click on 'Grounded' in Base layer -> From the Inspector change Blend Type: 2D Freeform Cartesian
+
+1. Add in 6 more Motion Fields
+
+Pos: X | Pos: Y
+Idle: - 0 | 0
+Walk: - 0.5 | 0
+Run: - 1 | 0
+
+StandQuarterTurnRight: - 0 | 0.5
+WalkRight: - 0.5 | 0.5
+RunRight: - 1 | 0.5
+
+StandHalfTurnRight:- 0 | 1
+WalkRightSharp: - 0.5 | 1
+RunRightSharp: - 1 | 1
+
+2. Add 6 more Motion Fields -> This will be for turning Left
+
+StandQuarterTurnLeft: 0 |- 0.5
+WalkLeft: 0.5 |- 0.5
+RunLeft: 1 |- 0.5
+StandHalfTurnLeft: 0 |- 0.1
+WalkLeftSharp: 0.5 |- 0.1
+RunLeftSharp: 1 |- 0.1
+
+---
+Create Crouch Blend Tree
+
+(idle, turning, moving)
+
+1. In Animator Base Layer -> Right Click -> Create State -> From New Blend Tree -> Rename Crouch
+
+2. Select Crouch from Base Layer -> In the Inspector change Blend Type to 2D Freeform Cartesian
+
+3. Parameters -> forwardSpeed and turnSpeed
+
+4. Add in Motion Fields
+
+Pos: X | Pos: Y
+CrouchIdle: 0 | 0
+CrouchLeft: 0 | - 1
+CrouchWalkLeft: 1 | - 1
+
+Crouchwalk: 1 | 0 
+CrouchRight: 0 | 1
+CrouchWalkRight: 1| 1 
+
+5. Connect in Animator
+- Right click on Grounded -> make transition -> drag to Crouch
+- Select path arrow
+- In Inpsector scroll to Conditions -> select duck -> uncheck Has Exit Time
+- In Animator Base Layer -> right click Crouch -> make transition -> drag to Grounded
+
+---
+
+1. When would you use a Cartesian blend type instead of Directional?
+
+- When the movement isn't left, right, forward backward
+
+2. When would you use Freeform Directional over Simple Directional blend type?
+
+- If you have multiple movements in the same direction
+
+3. Where would you click to preview the animation of a blend tree?
+
+- D
+
+4. How do you select an animation for the Blend Tree Motion Field?
+
+- C

@@ -1,0 +1,36 @@
+Quiz 57 States and Transitions
+
+Key Focus:
+
+- Using Animator for states (aka animation)
+- How Animator is used
+
+[Pre work]
+1. Import GameObject Animation 
+2. Connect with pre made Animator
+3. Open Animator
+---
+To connect one state (animation) with another for a GameObject
+1. Idle state -> Right click: Make Transition -> Select to Walk state
+2. To cycle through both repeat -> On Walk State -> Right click: Make Transition -> Select Idle state. 
+On Play mode it will keep going through the states
+
+1. How do you add a new state to an Animator Controller?
+
+- Drag an Animation asset onto te Animator Controller window
+
+2. Why is the following state orange?
+
+- It is the layer's default state
+
+3. How do you create a transition between states?
+
+- Right click 'Make Transition', drag to end state
+
+4. What does enabling the 'Apply Root Motion' option do below?
+
+- Moves the transform to match the root of the animation
+
+5. How do the states and transitions of the Animator Controller behave?
+
+- As a Finite State Machine

@@ -1,0 +1,14 @@
+Multi-animation Sequences
+
+Key Focus:
+- multi-animation sequences for when an animation is also interacting with the camera and physics
+- jump reacting to ground
+- creating own sequence of animations to create a jump
+
+---
+
+Practice Importing Animations and adjusting them in the inspector to create own sequence of animations.
+
+
+
+
