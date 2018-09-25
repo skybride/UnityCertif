@@ -1,0 +1,36 @@
+Quiz 66 Obstacle Avoidance
+
+Key Focus:
+- Nav Mesh Obstacle
+- AI avoiding dynamic obstacles
+- avoiding meshes not baked in
+
+
+---
+Nav Mesh Obstacles:
+Dynamic Object that has an effect on the environment
+
+Nav Mesh Obstacles -> Carve: 
+- if checked: carves a whole in the mesh (once the mesh stops moving) allow GameObject to pathfind through it
+
+---
+
+1. Which component is required to model dynamic obstacles?
+
+- Nav Mesh Obstacle
+
+2. Why might you want to enable the Carve property of a Nav Mesh Obstacle?
+
+- So an agent can find an efficient route around it when stationary
+
+3. At what point will an obstacle carve a hole in the NavMesh?
+
+- A short while after the object stops moving
+
+4. Describe the behaviour of an agent around an obstacle that doesn't carve the NavMesh
+
+- The agent will do it's best to avoid it but cannot route around it
+
+5. Which properties affect when recarving will occur?
+
+- Move Threshold

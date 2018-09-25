@@ -1,0 +1,46 @@
+Quiz 65 Bake Settings
+
+Key Focus:
+- navigation up steps, slopes
+- navigation underneath objects
+
+---
+*Windows -> Navigation -> Bake
+
+Radius: Affects dynamic objects
+
+---
+
+Navigation Tab -> Bake (parameters):
+- Agent Radius: getting around obstacles
+- Agent Height: having objects float above -> GameObject can or cannot run through
+- Max Slope: adjust until blue mesh is visible than bake
+NOTE: Max Slope (degrees) and Step Height affect one another
+- Step Height: stair case like
+
+NOTE: You have to bake after each adjustment!
+
+---
+
+1. If an AI player gets stuck trying to go under a ledge that is to low, what baking property needs to be fixed?
+
+- Height
+
+2. In which case would you want to make the radius smaller?
+
+- If the AI isn't going through narrow spaces it could easily fit into
+
+3. Why might you decrease the Max Slope property?
+
+- The AI is attempting slopes which are unrealistically steep
+
+4. What does changing the step height achieve?
+
+- Modifies the maximum step the AI can climb
+
+5. Match the property name to the diagram
+
+1 = B
+2 = C
+3 = D
+4 = A

@@ -1,2 +1,65 @@
 Quiz 64 Navigation Baking
 
+Key Focus:
+- Nav Mesh
+- Nav Agent
+- AI
+
+---
+
+Windows -> Navigation -> Bake
+Assets -> Import Package -> Characters
+
+[Prefab setup]
+
+- Rigidbody -> gravity checked
+- Capsule Collider
+- AI Controller -> Requires an End point
+- Nav Mesh Agent
+
+NOTE: Navigation needs to be static
+Inspector while end point is selected -> Static -> adjust to Navigation Static
+
+Before you can go into Play mode you have to bake -> similar to for lighting
+
+Nav Mesh Agent:
+
+[Agent Size]
+- Radius
+- Height
+- Base Offset
+[Steering]
+- Speed 
+- Angular Speed
+- Acceleration
+- Stopping Distance
+- Auto Braking
+[Obstacle Avoidance]
+- Quality
+- Priority
+[Pathfinding]
+- Auto Traverse off ...
+- Auto Repath
+- Area Mask
+
+---
+
+1. What is baking with regards to navigation?
+
+- Creating a mesh from all navigable surfaces of the navigation static objects
+
+2. A NavMesh is...
+
+- an asset
+
+3. Where do you go to generate a NavMesh?
+
+- Window -> Navigation -> Bake
+
+4. Which of the following is required to do pathfinding on a NavMesh?
+
+- A NavMeshAgent
+
+5. Which parameter could affect the NavMeshAgents movement under obstacles
+
+- Height
