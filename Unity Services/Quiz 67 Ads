@@ -1,3 +1,83 @@
 Quiz 67 Ads
 
 *Cloud Services with Unity allows you to sell apps to Mac Users
+
+---
+
+Key Focus:
+- Making ads through unity
+
+Window -> Services:
+- Create a Unity Project ID
+
+1. Select organization
+
+2. Services | Members | Age Designation | Settings
+
+[Services] 
+
+NOTE: Enable to adjust
+*Platform must be on Android or iOS
+
+- Ads: [Settings]iOS Android, [Code Samples] Reward for user (monetizing apps), [Docs]
+- Anlaytics
+- Cloud Build
+
+[How To Display Advertising]
+1. create a new script -> rename AdsScript
+2. Add 'using UnityEngine.Advertisments'
+
+syntax:
+
+using UnityEngine;
+using System.Collections;
+using UnityEngine.Advertisments;
+
+public class AdsScript : MonoBehaviour {
+	
+}
+
+3. In Update method ->
+
+void Update() {
+	ShowAd();
+} 
+
+4. Copy and paste Unity Service given method ->
+
+public void ShowAd()
+{
+	if (Advertisement.IsReady())
+	{
+		Advertisment.Show();
+	}
+}
+
+5. Add Script on to a GameObject -> ex. Main Camera
+
+6. Hit Play
+
+---
+
+1. Which type of advertising has the best reception from users?
+
+- Rewarded
+
+2. Which code snippet would you use to display a simple ad to a user?
+
+- if(Advertisment.IsREady())
+{
+	Advertisment.Show();
+}
+
+3. Which namespace(included with the 'using' keyword) do you need for advertising?
+
+- using UnityEngine.Advertisments;
+
+4. What is required to link your local project with a Unity Services project online?
+
+- A Unity Project ID
+
+5. What does the ads service allow you to do?
+
+- Make money by promoting other games in yours

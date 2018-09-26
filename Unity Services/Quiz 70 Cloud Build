@@ -1,0 +1,42 @@
+Quiz 70 Cloud Build
+
+*Windows -> Services: Enable Cloud Build
+
+Cloud build integrates with version control
+
+Services -> Cloud Build: 
+
+- Enable
+- Source Control: Git
+- Source Control Hosting URL: Copy/Clone URL from GitHub (your repo)
+- platform: android, iOS etc
+- branch: master, other branches
+- Unity Version: 
+- Bundle ID: (unique bundle when distributed to app store)
+- Choose credentials: Auto Generated Debug Keystore
+- Next Build -> Build will be queued
+- Go to cloud build website
+
+NOTE: if building for iOS there will be more identification required
+
+---
+
+1. Which of the following would be a good reason to use Unity Cloud build?
+
+- You have many build targets that you want to automate the build for
+
+2. When is a build triggered
+
+- On a new commit on the given branch
+
+3. Why might you use WebHooks in your project?
+
+- To send a notification of your build failing
+
+4. What does this tell us?
+
+- The build has succeeded 61% of the time
+
+5. If a build fails how can you investigate the cause?
+
+- View the logs

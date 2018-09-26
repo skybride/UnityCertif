@@ -1,0 +1,12 @@
+Unity Certification NOT CONFIDENT ABOUT
+
+- Local vs Global scaling difference?
+- Materials
+- Effects
+- Play with Particle System Curves! (Color + Lifetime, Gravity Modifier and Texture sheet and SUB-EMITTERS!)
+- Global Illumination?? bake?? real time?
+- Lightmaps
+- Probes
+- Raycast
+- Need to play more with Animations(using sub state machines to encapsulate sequence of animation clips)
+- AI navigation -> carving parameters -> ex move threshold

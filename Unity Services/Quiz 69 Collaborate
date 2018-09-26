@@ -1,0 +1,56 @@
+Quiz 69 Collaborate
+
+Key Focus:
+
+- Unity Collaborate (after 5.5)
+- Version Control aka Git
+- roll backs + snapshots
+- Source Tree
+
+[GitHub]
+- Stores Repos online
+- GitClone (clone repo)
+
+[Source Tree]
+- paste clone into source path
+
+[Moving a Unity Project into Version Control]
+
+1. Create a new Unity Project
+2. Name + Save
+3. Find Directory for new Unity Project -> Cut 
+4. Paste into Directory that has Git initialized
+
+---
+
+1. Why would you use Version Control Software?
+
+- To track changes to your projects when collaborating with others
+
+2. What is a commit?
+
+- A snapshot of your project
+
+3. How do you get changes that are on a remote Git repo?
+
+- Pull
+
+4. What is a branch?
+
+- a label that gets moved as you commit
+
+5. What advantage does Collaborate have over Git?
+
+- Large file support
+
+6. Which version of Unity is supported by collaborate?
+
+- 5.4+
+
+7. Which is a limitation of collaborate in Beta?
+
+- Only 15GB worth of storage
+
+8. How many team members are supported
+
+- 15

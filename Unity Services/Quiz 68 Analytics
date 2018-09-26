@@ -1,0 +1,185 @@
+Quiz 68 Analytics
+
+*Demographics -> Ask for age!
+
+Key Focus:
+- Improving games
+- Track conversions
+
+Conversion:
+- goals
+- level ups
+- failing
+- in app purchases
+- opmtimizing prompts
+- keep track  of demographics
+- perform funnel analysis
+
+[Services -> Analytics] enable -> go to Dashboard
+
+- Requires Project ID
+- Enable Anayltics
+- Check Validate
+- Adding in custom events
+
+---
+* Namespace requirement : using System.Collections.Generic;
+
+1. Create a new C# script -> rename AnalyticsScripts or myAnalytics 
+NOTE: Don't call it Anayltics there will be a clash since the library already has a script called Analytics 
+
+syntax:
+
+using UnityEngine;
+using System.Collections;
+using UnityEngine.Analytics;
+using System.Collections.Generic;
+
+public class AnalyticsScripts : MonoBehaviour 
+{
+	void Start()
+	{
+		LevelUp();
+	}
+
+	void LevelUp()
+	{
+		int totalPotions = 5;
+		in totalCoins = 100;
+		string weaponID = "Weapon_102";
+		Analytics.CustomEvent("gameOver", new Dictionary<string,object>
+			{
+				{"potions", totalPotions},
+				{"coins", totalCoins},
+				{"activeWeapon", weaponID}
+			});
+	}
+}
+
+NOTE: LevelUp method from Analytics Dashboard
+
+Adjustments
+
+using UnityEngine;
+using System.Collections;
+using UnityEngine.Analytics;
+using System.Collections.Generic;
+
+public class AnalyticsScripts : MonoBehaviour 
+{
+	void Start()
+	{
+		LevelUp();
+	}
+
+	void LevelUp()
+	{
+		int totalPotions = 5;
+		in totalCoins = 100;
+		string weaponID = "Weapon_102";
+		Analytics.CustomEvent("levelUp", new Dictionary<string,object>
+			{
+				{"newLevel", 2},
+				{"trigger", "purchase"},
+
+			});
+	}
+}
+
+---
+Add this script on the Main Camera GameObject.
+
+
+[Monetization]
+
+Copy syntax from analytics.cloud.unity3d.com
+
+Analytics.Transaction("12345abcde", 0.99m, "USD", null, null);
+
+---
+using UnityEngine;
+using System.Collections;
+using UnityEngine.Analytics;
+using System.Collections.Generic;
+
+public class AnalyticsScripts : MonoBehaviour 
+{
+	
+	void Start()
+	{
+		LevelUp();
+	}
+
+	void LevelUp()
+	{	
+		Analytics.Transaction("levelUp", 1, "USD", null, null);
+
+		Analytics.CustomEvent("levelUp", new Dictionary<string,object>
+			{
+				{"newLevel", 2},
+				{"trigger", "purchase"},
+
+			});
+	}
+}
+
+[User Attributes]
+
+using UnityEngine;
+using System.Collections;
+using UnityEngine.Analytics;
+using System.Collections.Generic;
+
+public class AnalyticsScripts : MonoBehaviour 
+{
+	
+	void Start()
+	{
+		Gender gender = Gender.Female;
+		Analytics.SetUserGender(gender);
+
+		int birthYear = 1991;
+		Analytics.SetUserBirthYear(birthYear);
+
+		LevelUp();
+	}
+
+	void LevelUp()
+	{	
+		Analytics.Transaction("levelUp", 1, "USD", null, null);
+
+		Analytics.CustomEvent("levelUp", new Dictionary<string,object>
+			{
+				{"newLevel", 2},
+				{"trigger", "purchase"},
+
+			});
+	}
+}
+
+---
+
+1. How would you log a custom event for a weapon p?
+
+- Analytics.CustomEvent("weaponPickup", new Dictionary<string, object>
+	{
+		{"weapon", "gun"},
+	});
+
+2. What does this code do?
+
+'Analytics.Transaction("10GoldPack", 4.00, "GBP", null, null);'
+
+- Logs a transaction for an item called "10GoldPack" purchased at 4.99 british pounds
+
+3. How would you verify a transaction for analytics was really purchased?
+
+- By providing an Android or iOS app store receipt to Analytics.Transaction()
+
+4. Which of the following is a type of demographic data you can report from your game?
+
+- User birth year
+
+5. What analysis would allow you to see when users get stuck in a game?
+
+- A Funnel
